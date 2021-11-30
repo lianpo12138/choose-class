@@ -1,0 +1,202 @@
+2021-11-12 10:21:58.424 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2021-11-12 10:21:58.437 INFO  rainclassv3.config.RainClassV3Application         :55   [32m                  [0;39m Starting RainClassV3Application using Java 1.8.0_261 on DESKTOP-6AM15DO with PID 16896 (F:\private\rain-class-v3-main\target\classes started by Administrator in F:\private\rain-class-v3-main)
+2021-11-12 10:21:58.437 INFO  rainclassv3.config.RainClassV3Application         :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-12 10:21:58.614 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 10:21:58.614 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-12 10:22:02.315 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-12 10:22:02.316 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-12 10:22:02.324 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2021-11-12 10:22:02.366 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-12 10:22:02.367 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-12 10:22:02.419 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-11-12 10:22:04.090 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 9000 (http)
+2021-11-12 10:22:04.111 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-9000"]
+2021-11-12 10:22:04.111 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-12 10:22:04.112 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-11-12 10:22:04.325 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-12 10:22:04.325 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 5710 ms
+2021-11-12 10:22:06.711 INFO  rainclassv3.config.CorsConfig                     :43   [32m                  [0;39m 外部尝试访问磁盘图片
+2021-11-12 10:22:06.711 INFO  rainclassv3.config.CorsConfig                     :44   [32m                  [0;39m 拦截器中设置的路径为:file:G:\root\disPic
+2021-11-12 10:22:06.802 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105  [32m                  [0;39m Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-11-12 10:22:06.919 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-11-12 10:22:07.086 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-11-12 10:22:07.461 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-12 10:22:07.481 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-9000"]
+2021-11-12 10:22:07.525 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 9000 (http) with context path ''
+2021-11-12 10:22:07.536 INFO  rainclassv3.config.RainClassV3Application         :61   [32m                  [0;39m Started RainClassV3Application in 10.263 seconds (JVM running for 11.762)
+2021-11-12 10:22:07.587 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-12 10:22:07.587 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-12 10:22:07.588 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-11-12 10:22:07.858 WARN  rainclassv3.controller.ControllerExceptionHandler :39   [32m                  [0;39m 参数校验失败：登录名不能为空
+2021-11-12 10:22:07.916 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public rainclassv3.resp.CommonResp rainclassv3.controller.UserController.login(rainclassv3.req.UserLoginReq) with 2 errors: [Field error in object 'userLoginReq' on field 'loginname': rejected value []; codes [NotEmpty.userLoginReq.loginname,NotEmpty.loginname,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userLoginReq.loginname,loginname]; arguments []; default message [loginname]]; default message [登录名不能为空]] [Field error in object 'userLoginReq' on field 'password': rejected value []; codes [NotEmpty.userLoginReq.password,NotEmpty.password,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userLoginReq.password,password]; arguments []; default message [password]]; default message [密码不能为空]] ]
+2021-11-12 10:22:15.721 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114187979068674048[0;39m ------------- 开始 -------------
+2021-11-12 10:22:15.722 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114187979068674048[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:22:15.722 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114187979068674048[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:22:15.723 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114187979068674048[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-12 10:22:15.796 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114187979068674048[0;39m 请求参数: [{"loginname":"student","role":"student"}]
+2021-11-12 10:22:15.800 INFO  rainclassv3.controller.UserController             :53   [32m114187979068674048[0;39m 传入的密码信息为:student
+2021-11-12 10:22:15.801 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114187979068674048[0;39m 登录的角色为:student
+2021-11-12 10:22:16.163 INFO  rainclassv3.controller.UserController             :62   [32m114187979068674048[0;39m 生成的用户 token 为:114187980926750720
+2021-11-12 10:22:17.090 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114187984814870528[0;39m ------------- 开始 -------------
+2021-11-12 10:22:17.091 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114187984814870528[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:22:17.091 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114187984814870528[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:22:17.091 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114187984814870528[0;39m 远程地址: 127.0.0.1
+2021-11-12 10:22:17.091 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114187984814870528[0;39m 请求参数: [{"loginname":"student","role":"student"}]
+2021-11-12 10:22:17.092 INFO  rainclassv3.controller.UserController             :53   [32m114187984814870528[0;39m 传入的密码信息为:student
+2021-11-12 10:22:17.092 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114187984814870528[0;39m 登录的角色为:student
+2021-11-12 10:22:17.095 INFO  rainclassv3.controller.UserController             :62   [32m114187984814870528[0;39m 生成的用户 token 为:114187984835842048
+2021-11-12 10:22:17.226 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114187984814870528[0;39m 返回结果: {"content":{"createtime":1636454836000,"id":108136249159716865,"loginname":"student","realname":"学生","role":"student","token":"114187984835842048"},"success":true}
+2021-11-12 10:22:17.226 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114187979068674048[0;39m 返回结果: {"content":{"createtime":1636454836000,"id":108136249159716865,"loginname":"student","realname":"学生","role":"student","token":"114187980926750720"},"success":true}
+2021-11-12 10:22:17.227 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114187984814870528[0;39m ------------- 结束 耗时：137 ms -------------
+2021-11-12 10:22:17.227 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114187979068674048[0;39m ------------- 结束 耗时：1507 ms -------------
+2021-11-12 10:27:51.191 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114189386136031232[0;39m ------------- 开始 -------------
+2021-11-12 10:27:51.192 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114189386136031232[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:27:51.192 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114189386136031232[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:27:51.192 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114189386136031232[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-12 10:27:51.192 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114189386136031232[0;39m 请求参数: [{"loginname":"admin","role":"admin"}]
+2021-11-12 10:27:51.192 INFO  rainclassv3.controller.UserController             :53   [32m114189386136031232[0;39m 传入的密码信息为:admin
+2021-11-12 10:27:51.193 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114189386136031232[0;39m 登录的角色为:admin
+2021-11-12 10:27:51.202 INFO  rainclassv3.controller.UserController             :62   [32m114189386136031232[0;39m 生成的用户 token 为:114189386182168576
+2021-11-12 10:27:51.204 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114189386136031232[0;39m 返回结果: {"content":{"id":1,"loginname":"admin","realname":"吴林峰","role":"admin","token":"114189386182168576"},"success":true}
+2021-11-12 10:27:51.204 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114189386136031232[0;39m ------------- 结束 耗时：13 ms -------------
+2021-11-12 10:32:02.484 WARN  rainclassv3.controller.ControllerExceptionHandler :39   [32m                  [0;39m 参数校验失败：登录名不能为空
+2021-11-12 10:32:02.485 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public rainclassv3.resp.CommonResp rainclassv3.controller.UserController.login(rainclassv3.req.UserLoginReq) with 2 errors: [Field error in object 'userLoginReq' on field 'loginname': rejected value []; codes [NotEmpty.userLoginReq.loginname,NotEmpty.loginname,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userLoginReq.loginname,loginname]; arguments []; default message [loginname]]; default message [登录名不能为空]] [Field error in object 'userLoginReq' on field 'password': rejected value []; codes [NotEmpty.userLoginReq.password,NotEmpty.password,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userLoginReq.password,password]; arguments []; default message [password]]; default message [密码不能为空]] ]
+2021-11-12 10:32:10.722 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114190474683748352[0;39m ------------- 开始 -------------
+2021-11-12 10:32:10.722 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114190474683748352[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:32:10.723 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114190474683748352[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:32:10.723 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114190474683748352[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-12 10:32:10.724 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114190474683748352[0;39m 请求参数: [{"loginname":"admin","role":"admin"}]
+2021-11-12 10:32:10.724 INFO  rainclassv3.controller.UserController             :53   [32m114190474683748352[0;39m 传入的密码信息为:admin
+2021-11-12 10:32:10.724 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114190474683748352[0;39m 登录的角色为:admin
+2021-11-12 10:32:10.728 INFO  rainclassv3.controller.UserController             :62   [32m114190474683748352[0;39m 生成的用户 token 为:114190474713108480
+2021-11-12 10:32:10.730 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114190474683748352[0;39m 返回结果: {"content":{"id":1,"loginname":"admin","realname":"吴林峰","role":"admin","token":"114190474713108480"},"success":true}
+2021-11-12 10:32:10.730 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114190474683748352[0;39m ------------- 结束 耗时：9 ms -------------
+2021-11-12 10:32:29.058 WARN  rainclassv3.controller.ControllerExceptionHandler :39   [32m                  [0;39m 参数校验失败：登录名不能为空
+2021-11-12 10:32:29.063 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public rainclassv3.resp.CommonResp rainclassv3.controller.UserController.login(rainclassv3.req.UserLoginReq) with 2 errors: [Field error in object 'userLoginReq' on field 'loginname': rejected value []; codes [NotEmpty.userLoginReq.loginname,NotEmpty.loginname,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userLoginReq.loginname,loginname]; arguments []; default message [loginname]]; default message [登录名不能为空]] [Field error in object 'userLoginReq' on field 'password': rejected value []; codes [NotEmpty.userLoginReq.password,NotEmpty.password,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userLoginReq.password,password]; arguments []; default message [password]]; default message [密码不能为空]] ]
+2021-11-12 10:32:41.176 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114190602421276672[0;39m ------------- 开始 -------------
+2021-11-12 10:32:41.177 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114190602421276672[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:32:41.177 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114190602421276672[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:32:41.177 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114190602421276672[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-12 10:32:41.178 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114190602421276672[0;39m 请求参数: [{"loginname":"admin","role":"admin"}]
+2021-11-12 10:32:41.178 INFO  rainclassv3.controller.UserController             :53   [32m114190602421276672[0;39m 传入的密码信息为:admin
+2021-11-12 10:32:41.178 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114190602421276672[0;39m 登录的角色为:admin
+2021-11-12 10:32:41.181 INFO  rainclassv3.controller.UserController             :62   [32m114190602421276672[0;39m 生成的用户 token 为:114190602442248192
+2021-11-12 10:32:41.182 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114190602421276672[0;39m 返回结果: {"content":{"id":1,"loginname":"admin","realname":"吴林峰","role":"admin","token":"114190602442248192"},"success":true}
+2021-11-12 10:32:41.183 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114190602421276672[0;39m ------------- 结束 耗时：7 ms -------------
+2021-11-12 10:33:03.005 WARN  rainclassv3.controller.ControllerExceptionHandler :39   [32m                  [0;39m 参数校验失败：登录名不能为空
+2021-11-12 10:33:03.006 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public rainclassv3.resp.CommonResp rainclassv3.controller.UserController.login(rainclassv3.req.UserLoginReq) with 2 errors: [Field error in object 'userLoginReq' on field 'loginname': rejected value []; codes [NotEmpty.userLoginReq.loginname,NotEmpty.loginname,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userLoginReq.loginname,loginname]; arguments []; default message [loginname]]; default message [登录名不能为空]] [Field error in object 'userLoginReq' on field 'password': rejected value []; codes [NotEmpty.userLoginReq.password,NotEmpty.password,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userLoginReq.password,password]; arguments []; default message [password]]; default message [密码不能为空]] ]
+2021-11-12 10:33:11.697 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114190730435629056[0;39m ------------- 开始 -------------
+2021-11-12 10:33:11.698 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114190730435629056[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:33:11.698 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114190730435629056[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:33:11.698 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114190730435629056[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-12 10:33:11.698 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114190730435629056[0;39m 请求参数: [{"loginname":"admin","role":"admin"}]
+2021-11-12 10:33:11.698 INFO  rainclassv3.controller.UserController             :53   [32m114190730435629056[0;39m 传入的密码信息为:admin
+2021-11-12 10:33:11.698 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114190730435629056[0;39m 登录的角色为:admin
+2021-11-12 10:33:11.701 INFO  rainclassv3.controller.UserController             :62   [32m114190730435629056[0;39m 生成的用户 token 为:114190730452406272
+2021-11-12 10:33:11.703 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114190730435629056[0;39m 返回结果: {"content":{"id":1,"loginname":"admin","realname":"吴林峰","role":"admin","token":"114190730452406272"},"success":true}
+2021-11-12 10:33:11.704 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114190730435629056[0;39m ------------- 结束 耗时：7 ms -------------
+2021-11-12 10:33:37.544 WARN  rainclassv3.controller.ControllerExceptionHandler :39   [32m114189386136031232[0;39m 参数校验失败：密码不能为空
+2021-11-12 10:33:37.545 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m114189386136031232[0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public rainclassv3.resp.CommonResp rainclassv3.controller.UserController.login(rainclassv3.req.UserLoginReq) with 2 errors: [Field error in object 'userLoginReq' on field 'password': rejected value []; codes [NotEmpty.userLoginReq.password,NotEmpty.password,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userLoginReq.password,password]; arguments []; default message [password]]; default message [密码不能为空]] [Field error in object 'userLoginReq' on field 'loginname': rejected value []; codes [NotEmpty.userLoginReq.loginname,NotEmpty.loginname,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userLoginReq.loginname,loginname]; arguments []; default message [loginname]]; default message [登录名不能为空]] ]
+2021-11-12 10:33:45.528 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114190872333127680[0;39m ------------- 开始 -------------
+2021-11-12 10:33:45.528 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114190872333127680[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:33:45.528 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114190872333127680[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:33:45.529 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114190872333127680[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-12 10:33:45.529 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114190872333127680[0;39m 请求参数: [{"loginname":"admin","role":"admin"}]
+2021-11-12 10:33:45.529 INFO  rainclassv3.controller.UserController             :53   [32m114190872333127680[0;39m 传入的密码信息为:admin
+2021-11-12 10:33:45.529 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114190872333127680[0;39m 登录的角色为:admin
+2021-11-12 10:33:45.531 INFO  rainclassv3.controller.UserController             :62   [32m114190872333127680[0;39m 生成的用户 token 为:114190872345710592
+2021-11-12 10:33:45.533 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114190872333127680[0;39m 返回结果: {"content":{"id":1,"loginname":"admin","realname":"吴林峰","role":"admin","token":"114190872345710592"},"success":true}
+2021-11-12 10:33:45.534 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114190872333127680[0;39m ------------- 结束 耗时：6 ms -------------
+2021-11-12 10:34:25.009 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114191037928443904[0;39m ------------- 开始 -------------
+2021-11-12 10:34:25.009 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114191037928443904[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:34:25.010 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114191037928443904[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:34:25.010 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114191037928443904[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-12 10:34:25.010 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114191037928443904[0;39m 请求参数: [{"loginname":"admin","role":"admin"}]
+2021-11-12 10:34:25.010 INFO  rainclassv3.controller.UserController             :53   [32m114191037928443904[0;39m 传入的密码信息为:admin
+2021-11-12 10:34:25.010 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114191037928443904[0;39m 登录的角色为:admin
+2021-11-12 10:34:25.014 INFO  rainclassv3.controller.UserController             :62   [32m114191037928443904[0;39m 生成的用户 token 为:114191037949415424
+2021-11-12 10:34:25.015 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114191037928443904[0;39m 返回结果: {"content":{"id":1,"loginname":"admin","realname":"吴林峰","role":"admin","token":"114191037949415424"},"success":true}
+2021-11-12 10:34:25.016 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114191037928443904[0;39m ------------- 结束 耗时：6 ms -------------
+2021-11-12 10:35:05.730 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114191208724697088[0;39m ------------- 开始 -------------
+2021-11-12 10:35:05.730 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114191208724697088[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:35:05.731 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114191208724697088[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:35:05.731 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114191208724697088[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-12 10:35:05.731 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114191208724697088[0;39m 请求参数: [{"loginname":"admin","role":"admin"}]
+2021-11-12 10:35:05.731 INFO  rainclassv3.controller.UserController             :53   [32m114191208724697088[0;39m 传入的密码信息为:admin
+2021-11-12 10:35:05.731 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114191208724697088[0;39m 登录的角色为:admin
+2021-11-12 10:35:05.733 INFO  rainclassv3.controller.UserController             :62   [32m114191208724697088[0;39m 生成的用户 token 为:114191208737280000
+2021-11-12 10:35:05.735 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114191208724697088[0;39m 返回结果: {"content":{"id":1,"loginname":"admin","realname":"吴林峰","role":"admin","token":"114191208737280000"},"success":true}
+2021-11-12 10:35:05.735 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114191208724697088[0;39m ------------- 结束 耗时：5 ms -------------
+2021-11-12 10:35:39.098 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114191348680232960[0;39m ------------- 开始 -------------
+2021-11-12 10:35:39.098 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114191348680232960[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:35:39.098 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114191348680232960[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:35:39.098 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114191348680232960[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-12 10:35:39.099 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114191348680232960[0;39m 请求参数: [{"loginname":"admin","role":"admin"}]
+2021-11-12 10:35:39.099 INFO  rainclassv3.controller.UserController             :53   [32m114191348680232960[0;39m 传入的密码信息为:admin
+2021-11-12 10:35:39.099 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114191348680232960[0;39m 登录的角色为:admin
+2021-11-12 10:35:39.101 INFO  rainclassv3.controller.UserController             :62   [32m114191348680232960[0;39m 生成的用户 token 为:114191348692815872
+2021-11-12 10:35:39.102 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114191348680232960[0;39m 返回结果: {"content":{"id":1,"loginname":"admin","realname":"吴林峰","role":"admin","token":"114191348692815872"},"success":true}
+2021-11-12 10:35:39.103 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114191348680232960[0;39m ------------- 结束 耗时：5 ms -------------
+2021-11-12 10:36:02.739 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114191447837773824[0;39m ------------- 开始 -------------
+2021-11-12 10:36:02.739 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114191447837773824[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:36:02.739 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114191447837773824[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:36:02.739 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114191447837773824[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-12 10:36:02.740 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114191447837773824[0;39m 请求参数: [{"loginname":"student","role":"student"}]
+2021-11-12 10:36:02.740 INFO  rainclassv3.controller.UserController             :53   [32m114191447837773824[0;39m 传入的密码信息为:student
+2021-11-12 10:36:02.740 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114191447837773824[0;39m 登录的角色为:student
+2021-11-12 10:36:02.742 INFO  rainclassv3.controller.UserController             :62   [32m114191447837773824[0;39m 生成的用户 token 为:114191447850356736
+2021-11-12 10:36:02.743 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114191447837773824[0;39m 返回结果: {"content":{"createtime":1636454836000,"id":108136249159716865,"loginname":"student","realname":"学生","role":"student","token":"114191447850356736"},"success":true}
+2021-11-12 10:36:02.744 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114191447837773824[0;39m ------------- 结束 耗时：5 ms -------------
+2021-11-12 10:37:10.916 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114191733792837632[0;39m ------------- 开始 -------------
+2021-11-12 10:37:10.916 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114191733792837632[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:37:10.916 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114191733792837632[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:37:10.916 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114191733792837632[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-12 10:37:10.917 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114191733792837632[0;39m 请求参数: [{"loginname":"student","role":"student"}]
+2021-11-12 10:37:10.917 INFO  rainclassv3.controller.UserController             :53   [32m114191733792837632[0;39m 传入的密码信息为:student
+2021-11-12 10:37:10.917 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114191733792837632[0;39m 登录的角色为:student
+2021-11-12 10:37:10.919 INFO  rainclassv3.controller.UserController             :62   [32m114191733792837632[0;39m 生成的用户 token 为:114191733805420544
+2021-11-12 10:37:10.920 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114191733792837632[0;39m 返回结果: {"content":{"createtime":1636454836000,"id":108136249159716865,"loginname":"student","realname":"学生","role":"student","token":"114191733805420544"},"success":true}
+2021-11-12 10:37:10.920 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114191733792837632[0;39m ------------- 结束 耗时：4 ms -------------
+2021-11-12 10:37:24.557 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114191791007338496[0;39m ------------- 开始 -------------
+2021-11-12 10:37:24.557 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114191791007338496[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:37:24.557 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114191791007338496[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:37:24.557 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114191791007338496[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-12 10:37:24.589 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114191791007338496[0;39m 请求参数: [{"loginname":"teacher","role":"teacher"}]
+2021-11-12 10:37:24.589 INFO  rainclassv3.controller.UserController             :53   [32m114191791007338496[0;39m 传入的密码信息为:teacher
+2021-11-12 10:37:24.589 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114191791007338496[0;39m 登录的角色为:teacher
+2021-11-12 10:37:24.638 INFO  rainclassv3.service.impl.UserServiceImpl          :86   [32m114191791007338496[0;39m 查询出的教师信息为:[Teacher [Hash = 1344557076, id=1, loginname=teacher, realname=吴林峰（测试）, password=teacher, email=null, createtime=null, logintime=null]]
+2021-11-12 10:37:24.643 INFO  rainclassv3.controller.UserController             :62   [32m114191791007338496[0;39m 生成的用户 token 为:114191791368048640
+2021-11-12 10:37:24.646 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114191791007338496[0;39m 返回结果: {"content":{"id":1,"loginname":"teacher","realname":"吴林峰（测试）","role":"teacher","token":"114191791368048640"},"success":true}
+2021-11-12 10:37:24.646 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114191791007338496[0;39m ------------- 结束 耗时：89 ms -------------
+2021-11-12 10:38:16.204 WARN  rainclassv3.controller.ControllerExceptionHandler :39   [32m114190730435629056[0;39m 参数校验失败：密码不能为空
+2021-11-12 10:38:16.205 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m114190730435629056[0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public rainclassv3.resp.CommonResp rainclassv3.controller.UserController.login(rainclassv3.req.UserLoginReq): [Field error in object 'userLoginReq' on field 'password': rejected value []; codes [NotEmpty.userLoginReq.password,NotEmpty.password,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userLoginReq.password,password]; arguments []; default message [password]]; default message [密码不能为空]] ]
+2021-11-12 10:38:20.104 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114192023988342784[0;39m ------------- 开始 -------------
+2021-11-12 10:38:20.104 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114192023988342784[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:38:20.104 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114192023988342784[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:38:20.104 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114192023988342784[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-12 10:38:20.104 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114192023988342784[0;39m 请求参数: [{"loginname":"admin","role":"admin"}]
+2021-11-12 10:38:20.104 INFO  rainclassv3.controller.UserController             :53   [32m114192023988342784[0;39m 传入的密码信息为:admin
+2021-11-12 10:38:20.105 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114192023988342784[0;39m 登录的角色为:admin
+2021-11-12 10:38:20.106 INFO  rainclassv3.controller.UserController             :62   [32m114192023988342784[0;39m 生成的用户 token 为:114192023996731392
+2021-11-12 10:38:20.108 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114192023988342784[0;39m 返回结果: {"content":{"id":1,"loginname":"admin","realname":"吴林峰","role":"admin","token":"114192023996731392"},"success":true}
+2021-11-12 10:38:20.108 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114192023988342784[0;39m ------------- 结束 耗时：4 ms -------------
+2021-11-12 10:42:54.659 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114193175555477504[0;39m ------------- 开始 -------------
+2021-11-12 10:42:54.659 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114193175555477504[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:42:54.660 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114193175555477504[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:42:54.660 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114193175555477504[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-12 10:42:54.660 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114193175555477504[0;39m 请求参数: [{"loginname":"admin","role":"admin"}]
+2021-11-12 10:42:54.660 INFO  rainclassv3.controller.UserController             :53   [32m114193175555477504[0;39m 传入的密码信息为:admin
+2021-11-12 10:42:54.660 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114193175555477504[0;39m 登录的角色为:admin
+2021-11-12 10:42:54.663 INFO  rainclassv3.controller.UserController             :62   [32m114193175555477504[0;39m 生成的用户 token 为:114193175572254720
+2021-11-12 10:42:54.664 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114193175555477504[0;39m 返回结果: {"content":{"id":1,"loginname":"admin","realname":"吴林峰","role":"admin","token":"114193175572254720"},"success":true}
+2021-11-12 10:42:54.665 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114193175555477504[0;39m ------------- 结束 耗时：6 ms -------------
+2021-11-12 10:52:33.768 INFO  rainclassv3.aspect.LogAspect                      :62   [32m114195604514672640[0;39m ------------- 开始 -------------
+2021-11-12 10:52:33.769 INFO  rainclassv3.aspect.LogAspect                      :63   [32m114195604514672640[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-11-12 10:52:33.769 INFO  rainclassv3.aspect.LogAspect                      :64   [32m114195604514672640[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-12 10:52:33.769 INFO  rainclassv3.aspect.LogAspect                      :65   [32m114195604514672640[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-12 10:52:33.769 INFO  rainclassv3.aspect.LogAspect                      :87   [32m114195604514672640[0;39m 请求参数: [{"loginname":"admin","role":"admin"}]
+2021-11-12 10:52:33.770 INFO  rainclassv3.controller.UserController             :53   [32m114195604514672640[0;39m 传入的密码信息为:admin
+2021-11-12 10:52:33.770 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m114195604514672640[0;39m 登录的角色为:admin
+2021-11-12 10:52:33.776 INFO  rainclassv3.controller.UserController             :62   [32m114195604514672640[0;39m 生成的用户 token 为:114195604548227072
+2021-11-12 10:52:33.778 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114195604514672640[0;39m 返回结果: {"content":{"id":1,"loginname":"admin","realname":"吴林峰","role":"admin","token":"114195604548227072"},"success":true}
+2021-11-12 10:52:33.779 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114195604514672640[0;39m ------------- 结束 耗时：11 ms -------------
