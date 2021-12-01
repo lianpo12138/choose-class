@@ -1,0 +1,29 @@
+2021-11-08 16:10:25.829 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2021-11-08 16:10:25.833 INFO  rainclassv3.config.RainClassV3Application         :55   [32m                  [0;39m Starting RainClassV3Application using Java 1.8.0_261 on DESKTOP-6AM15DO with PID 11688 (F:\private\rain-class-v3-main\target\classes started by Administrator in F:\private\rain-class-v3-main)
+2021-11-08 16:10:25.834 INFO  rainclassv3.config.RainClassV3Application         :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-08 16:10:25.870 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-08 16:10:25.888 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-08 16:10:26.399 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-08 16:10:26.400 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-08 16:10:26.406 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2021-11-08 16:10:26.415 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-08 16:10:26.415 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-08 16:10:26.422 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-11-08 16:10:26.975 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 9000 (http)
+2021-11-08 16:10:26.982 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-9000"]
+2021-11-08 16:10:26.982 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-08 16:10:26.983 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-11-08 16:10:27.041 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-08 16:10:27.041 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1153 ms
+2021-11-08 16:10:27.830 INFO  rainclassv3.config.CorsConfig                     :43   [32m                  [0;39m 外部尝试访问磁盘图片
+2021-11-08 16:10:27.831 INFO  rainclassv3.config.CorsConfig                     :44   [32m                  [0;39m 拦截器中设置的路径为:file:G:\root\disPic
+2021-11-08 16:10:27.864 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105  [32m                  [0;39m Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-11-08 16:10:27.943 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-11-08 16:10:28.025 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-11-08 16:10:28.248 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-08 16:10:28.263 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-9000"]
+2021-11-08 16:10:28.278 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 9000 (http) with context path ''
+2021-11-08 16:10:28.286 INFO  rainclassv3.config.RainClassV3Application         :61   [32m                  [0;39m Started RainClassV3Application in 2.809 seconds (JVM running for 3.611)
+2021-11-08 17:29:12.031 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-08 17:29:12.034 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-08 17:29:12.047 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 12 ms

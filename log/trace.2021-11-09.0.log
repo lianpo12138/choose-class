@@ -1,0 +1,692 @@
+2021-11-09 10:33:19.503 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2021-11-09 10:33:19.518 INFO  rainclassv3.config.RainClassV3Application         :55   [32m                  [0;39m Starting RainClassV3Application using Java 1.8.0_261 on DESKTOP-6AM15DO with PID 21388 (F:\private\rain-class-v3-main\target\classes started by Administrator in F:\private\rain-class-v3-main)
+2021-11-09 10:33:19.531 INFO  rainclassv3.config.RainClassV3Application         :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-09 10:33:20.293 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-09 10:33:20.294 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-09 10:33:33.838 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-09 10:33:33.839 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-09 10:33:33.887 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 23 ms. Found 0 JDBC repository interfaces.
+2021-11-09 10:33:34.125 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-09 10:33:34.158 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-09 10:33:34.440 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-11-09 10:33:41.238 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 9000 (http)
+2021-11-09 10:33:41.335 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-9000"]
+2021-11-09 10:33:41.336 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-09 10:33:41.336 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-11-09 10:33:41.730 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-09 10:33:41.730 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 21436 ms
+2021-11-09 10:33:50.205 INFO  rainclassv3.config.CorsConfig                     :43   [32m                  [0;39m 外部尝试访问磁盘图片
+2021-11-09 10:33:50.205 INFO  rainclassv3.config.CorsConfig                     :44   [32m                  [0;39m 拦截器中设置的路径为:file:G:\root\disPic
+2021-11-09 10:33:50.758 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105  [32m                  [0;39m Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-11-09 10:33:51.397 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-11-09 10:33:52.216 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-11-09 10:33:53.616 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-09 10:33:53.692 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-9000"]
+2021-11-09 10:33:53.760 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 9000 (http) with context path ''
+2021-11-09 10:33:53.776 INFO  rainclassv3.config.RainClassV3Application         :61   [32m                  [0;39m Started RainClassV3Application in 38.861 seconds (JVM running for 43.298)
+2021-11-09 10:34:35.978 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-09 10:34:35.978 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-09 10:34:35.980 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-11-09 10:34:36.101 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113103920846475264[0;39m ------------- 开始 -------------
+2021-11-09 10:34:36.101 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113103920846475264[0;39m 请求地址: http://127.0.0.1:9000/class/list GET
+2021-11-09 10:34:36.102 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113103920846475264[0;39m 类名方法: rainclassv3.controller.ClassController.list
+2021-11-09 10:34:36.102 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113103920846475264[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:34:36.205 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113103920846475264[0;39m 请求参数: [{"classname":"","pageNum":1,"pageSize":3}]
+2021-11-09 10:34:36.698 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113103920846475264[0;39m 返回结果: {"content":{"list":[{"classname":"宋丹妮","code":"","credit":2,"desc":"她的唇钉真的感觉很不一样\n","id":108134230550253568,"notice":"越漂亮的女人越危险","path":"108133967470923776.jpg","place":"area","starttime":"周四","teacher":{"id":1,"loginname":"teacher","realname":"吴林峰（测试）"},"teacherid":1,"type":"专业主干课"},{"classname":"数据结构","code":"","credit":3,"desc":"后进先出","id":108134733455691776,"notice":"认真学习","path":"108134533903290368.jpg","place":"厚德楼","starttime":"周六晚上","teacher":{"$ref":"$.content.list[0].teacher"},"teacherid":1,"type":"专业主干课"}],"pageNum":1,"pageSize":3,"total":2},"success":true}
+2021-11-09 10:34:36.699 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113103920846475264[0;39m ------------- 结束 耗时：600 ms -------------
+2021-11-09 10:34:50.958 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113103983169638400[0;39m ------------- 开始 -------------
+2021-11-09 10:34:50.959 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113103983169638400[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 10:34:50.959 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113103983169638400[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 10:34:50.959 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113103983169638400[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:34:50.961 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113103983169638400[0;39m 请求参数: [{"loginname":"admin","role":"admin"}]
+2021-11-09 10:34:50.963 INFO  rainclassv3.controller.UserController             :53   [32m113103983169638400[0;39m 传入的密码信息为:admin
+2021-11-09 10:34:50.964 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113103983169638400[0;39m 登录的角色为:admin
+2021-11-09 10:34:50.970 WARN  rainclassv3.controller.ControllerExceptionHandler :54   [32m113103983169638400[0;39m 业务异常：用户名不存在或密码错误
+2021-11-09 10:34:50.972 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m113103983169638400[0;39m Resolved [rainclassv3.exception.BusinessException: 用户名不存在或密码错误]
+2021-11-09 10:35:28.590 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113104141009686528[0;39m ------------- 开始 -------------
+2021-11-09 10:35:28.591 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113104141009686528[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 10:35:28.591 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113104141009686528[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 10:35:28.591 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113104141009686528[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:35:28.591 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113104141009686528[0;39m 请求参数: [{"loginname":"admin","role":"admin"}]
+2021-11-09 10:35:28.591 INFO  rainclassv3.controller.UserController             :53   [32m113104141009686528[0;39m 传入的密码信息为:admin
+2021-11-09 10:35:28.592 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113104141009686528[0;39m 登录的角色为:admin
+2021-11-09 10:35:28.598 INFO  rainclassv3.controller.UserController             :62   [32m113104141009686528[0;39m 生成的用户 token 为:113104141043240960
+2021-11-09 10:35:29.502 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113104141009686528[0;39m 返回结果: {"content":{"id":1,"loginname":"admin","realname":"吴林峰","role":"admin","token":"113104141043240960"},"success":true}
+2021-11-09 10:35:29.503 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113104141009686528[0;39m ------------- 结束 耗时：913 ms -------------
+2021-11-09 10:35:37.848 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113104179840552960[0;39m ------------- 开始 -------------
+2021-11-09 10:35:37.848 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113104179840552960[0;39m 请求地址: http://127.0.0.1:9000/class/list GET
+2021-11-09 10:35:37.848 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113104179840552960[0;39m 类名方法: rainclassv3.controller.ClassController.list
+2021-11-09 10:35:37.848 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113104179840552960[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:35:37.849 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113104179840552960[0;39m 请求参数: [{"classname":"","pageNum":1,"pageSize":3}]
+2021-11-09 10:35:37.858 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113104179840552960[0;39m 返回结果: {"content":{"list":[{"classname":"宋丹妮","code":"","credit":2,"desc":"她的唇钉真的感觉很不一样\n","id":108134230550253568,"notice":"越漂亮的女人越危险","path":"108133967470923776.jpg","place":"area","starttime":"周四","teacher":{"id":1,"loginname":"teacher","realname":"吴林峰（测试）"},"teacherid":1,"type":"专业主干课"},{"classname":"数据结构","code":"","credit":3,"desc":"后进先出","id":108134733455691776,"notice":"认真学习","path":"108134533903290368.jpg","place":"厚德楼","starttime":"周六晚上","teacher":{"$ref":"$.content.list[0].teacher"},"teacherid":1,"type":"专业主干课"}],"pageNum":1,"pageSize":3,"total":2},"success":true}
+2021-11-09 10:35:37.858 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113104179840552960[0;39m ------------- 结束 耗时：10 ms -------------
+2021-11-09 10:36:29.040 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113104394555363328[0;39m ------------- 开始 -------------
+2021-11-09 10:36:29.040 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113104394555363328[0;39m 请求地址: http://127.0.0.1:9000/user/logout/undefined POST
+2021-11-09 10:36:29.040 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113104394555363328[0;39m 类名方法: rainclassv3.controller.UserController.logout
+2021-11-09 10:36:29.040 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113104394555363328[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:36:29.041 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113104394555363328[0;39m 请求参数: ["undefined"]
+2021-11-09 10:36:29.083 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113104394555363328[0;39m 返回结果: {"success":true}
+2021-11-09 10:36:29.083 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113104394555363328[0;39m ------------- 结束 耗时：43 ms -------------
+2021-11-09 10:36:29.139 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113104394970599424[0;39m ------------- 开始 -------------
+2021-11-09 10:36:29.139 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113104394970599424[0;39m 请求地址: http://127.0.0.1:9000/class/list GET
+2021-11-09 10:36:29.139 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113104394970599424[0;39m 类名方法: rainclassv3.controller.ClassController.list
+2021-11-09 10:36:29.139 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113104394970599424[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:36:29.139 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113104394970599424[0;39m 请求参数: [{"classname":"","pageNum":1,"pageSize":3}]
+2021-11-09 10:36:29.148 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113104394970599424[0;39m 返回结果: {"content":{"list":[{"classname":"宋丹妮","code":"","credit":2,"desc":"她的唇钉真的感觉很不一样\n","id":108134230550253568,"notice":"越漂亮的女人越危险","path":"108133967470923776.jpg","place":"area","starttime":"周四","teacher":{"id":1,"loginname":"teacher","realname":"吴林峰（测试）"},"teacherid":1,"type":"专业主干课"},{"classname":"数据结构","code":"","credit":3,"desc":"后进先出","id":108134733455691776,"notice":"认真学习","path":"108134533903290368.jpg","place":"厚德楼","starttime":"周六晚上","teacher":{"$ref":"$.content.list[0].teacher"},"teacherid":1,"type":"专业主干课"}],"pageNum":1,"pageSize":3,"total":2},"success":true}
+2021-11-09 10:36:29.148 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113104394970599424[0;39m ------------- 结束 耗时：9 ms -------------
+2021-11-09 10:36:44.263 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113104458401058816[0;39m ------------- 开始 -------------
+2021-11-09 10:36:44.263 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113104458401058816[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 10:36:44.263 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113104458401058816[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 10:36:44.263 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113104458401058816[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:36:44.263 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113104458401058816[0;39m 请求参数: [{"loginname":"admin","role":"admin"}]
+2021-11-09 10:36:44.264 INFO  rainclassv3.controller.UserController             :53   [32m113104458401058816[0;39m 传入的密码信息为:admin
+2021-11-09 10:36:44.264 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113104458401058816[0;39m 登录的角色为:admin
+2021-11-09 10:36:44.266 INFO  rainclassv3.controller.UserController             :62   [32m113104458401058816[0;39m 生成的用户 token 为:113104458417836032
+2021-11-09 10:36:44.269 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113104458401058816[0;39m 返回结果: {"content":{"id":1,"loginname":"admin","realname":"吴林峰","role":"admin","token":"113104458417836032"},"success":true}
+2021-11-09 10:36:44.270 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113104458401058816[0;39m ------------- 结束 耗时：8 ms -------------
+2021-11-09 10:38:49.769 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113104984815570944[0;39m ------------- 开始 -------------
+2021-11-09 10:38:49.770 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113104984815570944[0;39m 请求地址: http://127.0.0.1:9000/user/logout/undefined POST
+2021-11-09 10:38:49.770 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113104984815570944[0;39m 类名方法: rainclassv3.controller.UserController.logout
+2021-11-09 10:38:49.771 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113104984815570944[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:38:49.771 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113104984815570944[0;39m 请求参数: ["undefined"]
+2021-11-09 10:38:49.773 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113104984815570944[0;39m 返回结果: {"success":true}
+2021-11-09 10:38:49.774 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113104984815570944[0;39m ------------- 结束 耗时：5 ms -------------
+2021-11-09 10:39:06.766 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113105056106156032[0;39m ------------- 开始 -------------
+2021-11-09 10:39:06.767 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113105056106156032[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 10:39:06.767 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113105056106156032[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 10:39:06.767 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113105056106156032[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:39:06.767 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113105056106156032[0;39m 请求参数: [{"loginname":"student","role":"admin"}]
+2021-11-09 10:39:06.767 INFO  rainclassv3.controller.UserController             :53   [32m113105056106156032[0;39m 传入的密码信息为:student
+2021-11-09 10:39:06.768 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113105056106156032[0;39m 登录的角色为:admin
+2021-11-09 10:39:06.770 WARN  rainclassv3.controller.ControllerExceptionHandler :54   [32m113105056106156032[0;39m 业务异常：用户名不存在或密码错误
+2021-11-09 10:39:06.771 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m113105056106156032[0;39m Resolved [rainclassv3.exception.BusinessException: 用户名不存在或密码错误]
+2021-11-09 10:39:14.736 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113105089534758912[0;39m ------------- 开始 -------------
+2021-11-09 10:39:14.736 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113105089534758912[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 10:39:14.737 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113105089534758912[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 10:39:14.737 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113105089534758912[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:39:14.737 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113105089534758912[0;39m 请求参数: [{"loginname":"student","role":"student"}]
+2021-11-09 10:39:14.737 INFO  rainclassv3.controller.UserController             :53   [32m113105089534758912[0;39m 传入的密码信息为:student
+2021-11-09 10:39:14.737 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113105089534758912[0;39m 登录的角色为:student
+2021-11-09 10:39:14.741 WARN  rainclassv3.controller.ControllerExceptionHandler :54   [32m113105089534758912[0;39m 业务异常：用户名不存在或密码错误
+2021-11-09 10:39:14.741 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m113105089534758912[0;39m Resolved [rainclassv3.exception.BusinessException: 用户名不存在或密码错误]
+2021-11-09 10:39:19.831 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113105110900543488[0;39m ------------- 开始 -------------
+2021-11-09 10:39:19.831 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113105110900543488[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 10:39:19.831 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113105110900543488[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 10:39:19.831 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113105110900543488[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:39:19.832 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113105110900543488[0;39m 请求参数: [{"loginname":"student","role":"student"}]
+2021-11-09 10:39:19.832 INFO  rainclassv3.controller.UserController             :53   [32m113105110900543488[0;39m 传入的密码信息为:studnet
+2021-11-09 10:39:19.832 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113105110900543488[0;39m 登录的角色为:student
+2021-11-09 10:39:19.835 WARN  rainclassv3.controller.ControllerExceptionHandler :54   [32m113105110900543488[0;39m 业务异常：用户名不存在或密码错误
+2021-11-09 10:39:19.836 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m113105110900543488[0;39m Resolved [rainclassv3.exception.BusinessException: 用户名不存在或密码错误]
+2021-11-09 10:39:35.342 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113105175962587136[0;39m ------------- 开始 -------------
+2021-11-09 10:39:35.342 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113105175962587136[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 10:39:35.343 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113105175962587136[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 10:39:35.343 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113105175962587136[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:39:35.343 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113105175962587136[0;39m 请求参数: [{"loginname":"wulinfeng","role":"student"}]
+2021-11-09 10:39:35.343 INFO  rainclassv3.controller.UserController             :53   [32m113105175962587136[0;39m 传入的密码信息为:wulinfeng
+2021-11-09 10:39:35.344 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113105175962587136[0;39m 登录的角色为:student
+2021-11-09 10:39:35.356 INFO  rainclassv3.controller.UserController             :62   [32m113105175962587136[0;39m 生成的用户 token 为:113105176021307392
+2021-11-09 10:39:35.364 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113105175962587136[0;39m 返回结果: {"content":{"createtime":1635240891000,"id":108136249159716864,"loginname":"wulinfeng","realname":"吴林峰","role":"student","token":"113105176021307392"},"success":true}
+2021-11-09 10:39:35.364 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113105175962587136[0;39m ------------- 结束 耗时：22 ms -------------
+2021-11-09 10:41:44.907 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2021-11-09 10:41:44.911 INFO  rainclassv3.config.RainClassV3Application         :55   [32m                  [0;39m Starting RainClassV3Application using Java 1.8.0_261 on DESKTOP-6AM15DO with PID 17760 (F:\private\rain-class-v3-main\target\classes started by Administrator in F:\private\rain-class-v3-main)
+2021-11-09 10:41:44.912 INFO  rainclassv3.config.RainClassV3Application         :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-09 10:41:44.949 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-09 10:41:44.949 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-09 10:41:45.498 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-09 10:41:45.498 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-09 10:41:45.505 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2021-11-09 10:41:45.514 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-09 10:41:45.515 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-09 10:41:45.522 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-11-09 10:41:46.089 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 9000 (http)
+2021-11-09 10:41:46.095 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-9000"]
+2021-11-09 10:41:46.096 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-09 10:41:46.096 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-11-09 10:41:46.160 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-09 10:41:46.161 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1211 ms
+2021-11-09 10:41:46.992 INFO  rainclassv3.config.CorsConfig                     :43   [32m                  [0;39m 外部尝试访问磁盘图片
+2021-11-09 10:41:46.992 INFO  rainclassv3.config.CorsConfig                     :44   [32m                  [0;39m 拦截器中设置的路径为:file:G:\root\disPic
+2021-11-09 10:41:47.028 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105  [32m                  [0;39m Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-11-09 10:41:47.108 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-11-09 10:41:47.191 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-11-09 10:41:47.427 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-09 10:41:47.443 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-9000"]
+2021-11-09 10:41:47.458 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 9000 (http) with context path ''
+2021-11-09 10:41:47.466 INFO  rainclassv3.config.RainClassV3Application         :61   [32m                  [0;39m Started RainClassV3Application in 2.924 seconds (JVM running for 3.687)
+2021-11-09 10:41:54.172 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-09 10:41:54.172 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-09 10:41:54.173 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-11-09 10:41:54.228 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113105758488498176[0;39m ------------- 开始 -------------
+2021-11-09 10:41:54.229 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113105758488498176[0;39m 请求地址: http://127.0.0.1:9000/user/logout/undefined POST
+2021-11-09 10:41:54.229 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113105758488498176[0;39m 类名方法: rainclassv3.controller.UserController.logout
+2021-11-09 10:41:54.230 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113105758488498176[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:41:54.261 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113105758488498176[0;39m 请求参数: ["undefined"]
+2021-11-09 10:41:54.858 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113105758488498176[0;39m 返回结果: {"success":true}
+2021-11-09 10:41:54.858 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113105758488498176[0;39m ------------- 结束 耗时：631 ms -------------
+2021-11-09 10:41:55.623 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113105764343746560[0;39m ------------- 开始 -------------
+2021-11-09 10:41:55.623 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113105764343746560[0;39m 请求地址: http://127.0.0.1:9000/user/logout/undefined POST
+2021-11-09 10:41:55.623 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113105764343746560[0;39m 类名方法: rainclassv3.controller.UserController.logout
+2021-11-09 10:41:55.623 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113105764343746560[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:41:55.623 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113105764343746560[0;39m 请求参数: ["undefined"]
+2021-11-09 10:41:55.625 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113105764343746560[0;39m 返回结果: {"success":true}
+2021-11-09 10:41:55.625 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113105764343746560[0;39m ------------- 结束 耗时：3 ms -------------
+2021-11-09 10:42:12.552 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113105835349118976[0;39m ------------- 开始 -------------
+2021-11-09 10:42:12.552 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113105835349118976[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 10:42:12.552 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113105835349118976[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 10:42:12.553 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113105835349118976[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:42:12.554 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113105835349118976[0;39m 请求参数: [{"loginname":"wulinfeng","role":"student"}]
+2021-11-09 10:42:12.555 INFO  rainclassv3.controller.UserController             :53   [32m113105835349118976[0;39m 传入的密码信息为:wulinfeng
+2021-11-09 10:42:12.555 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113105835349118976[0;39m 登录的角色为:student
+2021-11-09 10:42:12.626 INFO  rainclassv3.controller.UserController             :62   [32m113105835349118976[0;39m 生成的用户 token 为:113105835659497472
+2021-11-09 10:42:12.636 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113105835349118976[0;39m 返回结果: {"content":{"createtime":1635240891000,"id":108136249159716864,"loginname":"wulinfeng","realname":"吴林峰","role":"student","token":"113105835659497472"},"success":true}
+2021-11-09 10:42:12.636 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113105835349118976[0;39m ------------- 结束 耗时：84 ms -------------
+2021-11-09 10:56:44.162 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2021-11-09 10:56:44.169 INFO  rainclassv3.config.RainClassV3Application         :55   [32m                  [0;39m Starting RainClassV3Application using Java 1.8.0_261 on DESKTOP-6AM15DO with PID 11116 (F:\private\rain-class-v3-main\target\classes started by Administrator in F:\private\rain-class-v3-main)
+2021-11-09 10:56:44.170 INFO  rainclassv3.config.RainClassV3Application         :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-09 10:56:44.221 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-09 10:56:44.222 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-09 10:56:44.876 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-09 10:56:44.877 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-09 10:56:44.884 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2021-11-09 10:56:44.896 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-09 10:56:44.897 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-09 10:56:44.906 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-11-09 10:56:45.611 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 9000 (http)
+2021-11-09 10:56:45.619 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-9000"]
+2021-11-09 10:56:45.620 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-09 10:56:45.620 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-11-09 10:56:45.694 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-09 10:56:45.694 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1471 ms
+2021-11-09 10:56:46.832 INFO  rainclassv3.config.CorsConfig                     :43   [32m                  [0;39m 外部尝试访问磁盘图片
+2021-11-09 10:56:46.833 INFO  rainclassv3.config.CorsConfig                     :44   [32m                  [0;39m 拦截器中设置的路径为:file:G:\root\disPic
+2021-11-09 10:56:46.876 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105  [32m                  [0;39m Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-11-09 10:56:46.979 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-11-09 10:56:47.114 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-11-09 10:56:47.405 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-09 10:56:47.425 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-9000"]
+2021-11-09 10:56:47.446 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 9000 (http) with context path ''
+2021-11-09 10:56:47.458 INFO  rainclassv3.config.RainClassV3Application         :61   [32m                  [0;39m Started RainClassV3Application in 3.811 seconds (JVM running for 5.361)
+2021-11-09 10:57:29.562 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-09 10:57:29.563 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-09 10:57:29.564 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-11-09 10:57:29.620 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113109681802711040[0;39m ------------- 开始 -------------
+2021-11-09 10:57:29.621 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113109681802711040[0;39m 请求地址: http://127.0.0.1:9000/class/list GET
+2021-11-09 10:57:29.621 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113109681802711040[0;39m 类名方法: rainclassv3.controller.ClassController.list
+2021-11-09 10:57:29.621 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113109681802711040[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:57:29.683 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113109681802711040[0;39m 请求参数: [{"classname":"","pageNum":1,"pageSize":3}]
+2021-11-09 10:57:29.843 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113109681802711040[0;39m 返回结果: {"content":{"list":[{"classname":"宋丹妮","code":"","credit":2,"desc":"她的唇钉真的感觉很不一样\n","id":108134230550253568,"notice":"越漂亮的女人越危险","path":"108133967470923776.jpg","place":"area","starttime":"周四","teacher":{"id":1,"loginname":"teacher","realname":"吴林峰（测试）"},"teacherid":1,"type":"专业主干课"},{"classname":"数据结构","code":"","credit":3,"desc":"后进先出","id":108134733455691776,"notice":"认真学习","path":"108134533903290368.jpg","place":"厚德楼","starttime":"周六晚上","teacher":{"$ref":"$.content.list[0].teacher"},"teacherid":1,"type":"专业主干课"}],"pageNum":1,"pageSize":3,"total":2},"success":true}
+2021-11-09 10:57:29.843 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113109681802711040[0;39m ------------- 结束 耗时：225 ms -------------
+2021-11-09 10:57:43.797 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113109741273747456[0;39m ------------- 开始 -------------
+2021-11-09 10:57:43.798 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113109741273747456[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 10:57:43.798 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113109741273747456[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 10:57:43.798 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113109741273747456[0;39m 远程地址: 127.0.0.1
+2021-11-09 10:57:43.800 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113109741273747456[0;39m 请求参数: [{"loginname":"student","role":"student"}]
+2021-11-09 10:57:43.803 INFO  rainclassv3.controller.UserController             :53   [32m113109741273747456[0;39m 传入的密码信息为:student
+2021-11-09 10:57:43.804 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113109741273747456[0;39m 登录的角色为:student
+2021-11-09 11:02:25.110 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m57s171ms930µs70ns).
+2021-11-09 11:03:07.310 INFO  rainclassv3.controller.UserController             :62   [32m113109741273747456[0;39m 生成的用户 token 为:113111068959707136
+2021-11-09 11:03:31.142 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m16s754ms440µs218ns).
+2021-11-09 11:04:15.969 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113109741273747456[0;39m 返回结果: {"content":{"createtime":1636454836000,"id":108136249159716865,"loginname":"student","realname":"学生","role":"student","token":"113111068959707136"},"success":true}
+2021-11-09 11:04:15.969 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113109741273747456[0;39m ------------- 结束 耗时：392172 ms -------------
+2021-11-09 11:10:29.064 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113112951036186624[0;39m ------------- 开始 -------------
+2021-11-09 11:10:29.064 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113112951036186624[0;39m 请求地址: http://127.0.0.1:9000/user/logout/undefined POST
+2021-11-09 11:10:29.064 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113112951036186624[0;39m 类名方法: rainclassv3.controller.UserController.logout
+2021-11-09 11:10:29.065 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113112951036186624[0;39m 远程地址: 127.0.0.1
+2021-11-09 11:10:29.065 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113112951036186624[0;39m 请求参数: ["undefined"]
+2021-11-09 11:10:29.069 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113112951036186624[0;39m 返回结果: {"success":true}
+2021-11-09 11:10:29.070 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113112951036186624[0;39m ------------- 结束 耗时：6 ms -------------
+2021-11-09 11:10:40.283 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113112998092083200[0;39m ------------- 开始 -------------
+2021-11-09 11:10:40.283 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113112998092083200[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 11:10:40.284 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113112998092083200[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 11:10:40.284 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113112998092083200[0;39m 远程地址: 127.0.0.1
+2021-11-09 11:10:40.284 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113112998092083200[0;39m 请求参数: [{"loginname":"wulinfeng","role":"student"}]
+2021-11-09 11:10:40.284 INFO  rainclassv3.controller.UserController             :53   [32m113112998092083200[0;39m 传入的密码信息为:wulinfeng
+2021-11-09 11:10:40.284 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113112998092083200[0;39m 登录的角色为:student
+2021-11-09 11:10:40.288 INFO  rainclassv3.controller.UserController             :62   [32m113112998092083200[0;39m 生成的用户 token 为:113112998113054720
+2021-11-09 11:10:40.290 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113112998092083200[0;39m 返回结果: {"content":{"createtime":1635240891000,"id":108136249159716864,"loginname":"wulinfeng","realname":"吴林峰","role":"student","token":"113112998113054720"},"success":true}
+2021-11-09 11:10:40.290 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113112998092083200[0;39m ------------- 结束 耗时：7 ms -------------
+2021-11-09 11:14:10.263 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-11-09 11:14:10.271 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-11-09 11:14:16.764 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2021-11-09 11:14:16.773 INFO  rainclassv3.config.RainClassV3Application         :55   [32m                  [0;39m Starting RainClassV3Application using Java 1.8.0_261 on DESKTOP-6AM15DO with PID 14180 (F:\private\rain-class-v3-main\target\classes started by Administrator in F:\private\rain-class-v3-main)
+2021-11-09 11:14:16.774 INFO  rainclassv3.config.RainClassV3Application         :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-09 11:14:16.830 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-09 11:14:16.830 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-09 11:14:17.507 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-09 11:14:17.508 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-09 11:14:17.515 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2021-11-09 11:14:17.525 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-09 11:14:17.526 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-09 11:14:17.535 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-11-09 11:14:18.276 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 9000 (http)
+2021-11-09 11:14:18.286 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-9000"]
+2021-11-09 11:14:18.287 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-09 11:14:18.287 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-11-09 11:14:18.365 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-09 11:14:18.365 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1534 ms
+2021-11-09 11:14:19.376 INFO  rainclassv3.config.CorsConfig                     :43   [32m                  [0;39m 外部尝试访问磁盘图片
+2021-11-09 11:14:19.377 INFO  rainclassv3.config.CorsConfig                     :44   [32m                  [0;39m 拦截器中设置的路径为:file:G:\root\disPic
+2021-11-09 11:14:19.415 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105  [32m                  [0;39m Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-11-09 11:14:19.510 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-11-09 11:14:19.604 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-11-09 11:14:19.890 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-09 11:14:19.907 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-9000"]
+2021-11-09 11:14:19.925 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 9000 (http) with context path ''
+2021-11-09 11:14:19.934 INFO  rainclassv3.config.RainClassV3Application         :61   [32m                  [0;39m Started RainClassV3Application in 3.614 seconds (JVM running for 4.499)
+2021-11-09 11:15:23.231 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-09 11:15:23.231 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-09 11:15:23.232 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-11-09 11:15:23.270 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113114185021394944[0;39m ------------- 开始 -------------
+2021-11-09 11:15:23.271 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113114185021394944[0;39m 请求地址: http://127.0.0.1:9000/user/logout/undefined POST
+2021-11-09 11:15:23.271 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113114185021394944[0;39m 类名方法: rainclassv3.controller.UserController.logout
+2021-11-09 11:15:23.271 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113114185021394944[0;39m 远程地址: 127.0.0.1
+2021-11-09 11:15:23.307 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113114185021394944[0;39m 请求参数: ["undefined"]
+2021-11-09 11:15:24.070 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113114185021394944[0;39m 返回结果: {"success":true}
+2021-11-09 11:15:24.070 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113114185021394944[0;39m ------------- 结束 耗时：801 ms -------------
+2021-11-09 11:15:36.360 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113114239929028608[0;39m ------------- 开始 -------------
+2021-11-09 11:15:36.361 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113114239929028608[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 11:15:36.361 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113114239929028608[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 11:15:36.361 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113114239929028608[0;39m 远程地址: 127.0.0.1
+2021-11-09 11:15:36.364 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113114239929028608[0;39m 请求参数: [{"loginname":"student","role":"student"}]
+2021-11-09 11:15:36.364 INFO  rainclassv3.controller.UserController             :53   [32m113114239929028608[0;39m 传入的密码信息为:studeng
+2021-11-09 11:15:36.364 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113114239929028608[0;39m 登录的角色为:student
+2021-11-09 11:15:36.444 WARN  rainclassv3.controller.ControllerExceptionHandler :54   [32m113114239929028608[0;39m 业务异常：用户名不存在或密码错误
+2021-11-09 11:15:36.446 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m113114239929028608[0;39m Resolved [rainclassv3.exception.BusinessException: 用户名不存在或密码错误]
+2021-11-09 11:15:43.168 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113114268479655936[0;39m ------------- 开始 -------------
+2021-11-09 11:15:43.168 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113114268479655936[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 11:15:43.168 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113114268479655936[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 11:15:43.169 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113114268479655936[0;39m 远程地址: 127.0.0.1
+2021-11-09 11:15:43.169 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113114268479655936[0;39m 请求参数: [{"loginname":"student","role":"student"}]
+2021-11-09 11:15:43.169 INFO  rainclassv3.controller.UserController             :53   [32m113114268479655936[0;39m 传入的密码信息为:student
+2021-11-09 11:15:43.169 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113114268479655936[0;39m 登录的角色为:student
+2021-11-09 11:15:43.185 INFO  rainclassv3.controller.UserController             :62   [32m113114268479655936[0;39m 生成的用户 token 为:113114268555153408
+2021-11-09 11:32:26.984 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m7s275ms469µs533ns).
+2021-11-09 11:32:26.985 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113114268479655936[0;39m 返回结果: {"content":{"createtime":1636454836000,"id":108136249159716865,"loginname":"student","realname":"学生","role":"student","token":"113114268555153408"},"success":true}
+2021-11-09 11:32:26.986 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113114268479655936[0;39m ------------- 结束 耗时：1003819 ms -------------
+2021-11-09 11:33:02.421 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-11-09 11:33:02.429 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-11-09 11:33:15.077 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2021-11-09 11:33:15.084 INFO  rainclassv3.config.RainClassV3Application         :55   [32m                  [0;39m Starting RainClassV3Application using Java 1.8.0_261 on DESKTOP-6AM15DO with PID 20884 (F:\private\rain-class-v3-main\target\classes started by Administrator in F:\private\rain-class-v3-main)
+2021-11-09 11:33:15.085 INFO  rainclassv3.config.RainClassV3Application         :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-09 11:33:15.135 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-09 11:33:15.135 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-09 11:33:15.827 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-09 11:33:15.828 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-09 11:33:15.836 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2021-11-09 11:33:15.845 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-09 11:33:15.846 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-09 11:33:15.855 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2021-11-09 11:33:16.603 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 9000 (http)
+2021-11-09 11:33:16.611 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-9000"]
+2021-11-09 11:33:16.612 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-09 11:33:16.613 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-11-09 11:33:16.694 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-09 11:33:16.694 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1558 ms
+2021-11-09 11:33:17.737 INFO  rainclassv3.config.CorsConfig                     :43   [32m                  [0;39m 外部尝试访问磁盘图片
+2021-11-09 11:33:17.737 INFO  rainclassv3.config.CorsConfig                     :44   [32m                  [0;39m 拦截器中设置的路径为:file:G:\root\disPic
+2021-11-09 11:33:17.784 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105  [32m                  [0;39m Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-11-09 11:33:17.890 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-11-09 11:33:17.998 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-11-09 11:33:18.309 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-09 11:33:18.326 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-9000"]
+2021-11-09 11:33:18.347 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 9000 (http) with context path ''
+2021-11-09 11:33:18.357 INFO  rainclassv3.config.RainClassV3Application         :61   [32m                  [0;39m Started RainClassV3Application in 3.794 seconds (JVM running for 4.742)
+2021-11-09 11:33:31.869 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-09 11:33:31.869 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-09 11:33:31.870 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-11-09 11:33:31.912 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113118751112695808[0;39m ------------- 开始 -------------
+2021-11-09 11:33:31.913 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113118751112695808[0;39m 请求地址: http://127.0.0.1:9000/user/logout/undefined POST
+2021-11-09 11:33:31.913 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113118751112695808[0;39m 类名方法: rainclassv3.controller.UserController.logout
+2021-11-09 11:33:31.913 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113118751112695808[0;39m 远程地址: 127.0.0.1
+2021-11-09 11:33:31.948 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113118751112695808[0;39m 请求参数: ["undefined"]
+2021-11-09 11:33:32.720 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113118751112695808[0;39m 返回结果: {"success":true}
+2021-11-09 11:33:32.721 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113118751112695808[0;39m ------------- 结束 耗时：811 ms -------------
+2021-11-09 11:33:32.824 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113118754946289664[0;39m ------------- 开始 -------------
+2021-11-09 11:33:32.824 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113118754946289664[0;39m 请求地址: http://127.0.0.1:9000/class/list GET
+2021-11-09 11:33:32.825 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113118754946289664[0;39m 类名方法: rainclassv3.controller.ClassController.list
+2021-11-09 11:33:32.825 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113118754946289664[0;39m 远程地址: 127.0.0.1
+2021-11-09 11:33:32.828 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113118754946289664[0;39m 请求参数: [{"classname":"","pageNum":1,"pageSize":3}]
+2021-11-09 11:33:32.959 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113118754946289664[0;39m 返回结果: {"content":{"list":[{"classname":"宋丹妮","code":"","credit":2,"desc":"她的唇钉真的感觉很不一样\n","id":108134230550253568,"notice":"越漂亮的女人越危险","path":"108133967470923776.jpg","place":"area","starttime":"周四","teacher":{"id":1,"loginname":"teacher","realname":"吴林峰（测试）"},"teacherid":1,"type":"专业主干课"},{"classname":"数据结构","code":"","credit":3,"desc":"后进先出","id":108134733455691776,"notice":"认真学习","path":"108134533903290368.jpg","place":"厚德楼","starttime":"周六晚上","teacher":{"$ref":"$.content.list[0].teacher"},"teacherid":1,"type":"专业主干课"}],"pageNum":1,"pageSize":3,"total":2},"success":true}
+2021-11-09 11:33:32.960 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113118754946289664[0;39m ------------- 结束 耗时：136 ms -------------
+2021-11-09 11:33:44.036 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113118801972826112[0;39m ------------- 开始 -------------
+2021-11-09 11:33:44.037 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113118801972826112[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 11:33:44.037 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113118801972826112[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 11:33:44.037 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113118801972826112[0;39m 远程地址: 127.0.0.1
+2021-11-09 11:33:44.038 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113118801972826112[0;39m 请求参数: [{"loginname":"wulinfeng","role":"student"}]
+2021-11-09 11:33:44.039 INFO  rainclassv3.controller.UserController             :53   [32m113118801972826112[0;39m 传入的密码信息为:wulinfeng
+2021-11-09 11:33:44.039 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113118801972826112[0;39m 登录的角色为:student
+2021-11-09 11:33:44.049 INFO  rainclassv3.controller.UserController             :62   [32m113118801972826112[0;39m 生成的用户 token 为:113118802027352064
+2021-11-09 11:33:44.053 ERROR rainclassv3.controller.ControllerExceptionHandler :69   [32m113118801972826112[0;39m 系统异常：
+org.springframework.data.redis.serializer.SerializationException: Cannot serialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to serialize object using DefaultSerializer; nested exception is java.lang.IllegalArgumentException: DefaultSerializer requires a Serializable payload but received an object of type [rainclassv3.resp.StudentLoginResp]
+	at org.springframework.data.redis.serializer.JdkSerializationRedisSerializer.serialize(JdkSerializationRedisSerializer.java:96)
+	at org.springframework.data.redis.core.AbstractOperations.rawValue(AbstractOperations.java:127)
+	at org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:254)
+	at rainclassv3.controller.UserController.login(UserController.java:64)
+	at rainclassv3.controller.UserController$$FastClassBySpringCGLIB$$5fd8e6ac.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at rainclassv3.aspect.LogAspect.doAround(LogAspect.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at rainclassv3.controller.UserController$$EnhancerBySpringCGLIB$$35102aa2.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.core.serializer.support.SerializationFailedException: Failed to serialize object using DefaultSerializer; nested exception is java.lang.IllegalArgumentException: DefaultSerializer requires a Serializable payload but received an object of type [rainclassv3.resp.StudentLoginResp]
+	at org.springframework.core.serializer.support.SerializingConverter.convert(SerializingConverter.java:64)
+	at org.springframework.core.serializer.support.SerializingConverter.convert(SerializingConverter.java:33)
+	at org.springframework.data.redis.serializer.JdkSerializationRedisSerializer.serialize(JdkSerializationRedisSerializer.java:94)
+	... 77 common frames omitted
+Caused by: java.lang.IllegalArgumentException: DefaultSerializer requires a Serializable payload but received an object of type [rainclassv3.resp.StudentLoginResp]
+	at org.springframework.core.serializer.DefaultSerializer.serialize(DefaultSerializer.java:43)
+	at org.springframework.core.serializer.Serializer.serializeToByteArray(Serializer.java:56)
+	at org.springframework.core.serializer.support.SerializingConverter.convert(SerializingConverter.java:60)
+	... 79 common frames omitted
+2021-11-09 11:33:44.056 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m113118801972826112[0;39m Resolved [org.springframework.data.redis.serializer.SerializationException: Cannot serialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to serialize object using DefaultSerializer; nested exception is java.lang.IllegalArgumentException: DefaultSerializer requires a Serializable payload but received an object of type [rainclassv3.resp.StudentLoginResp]]
+2021-11-09 11:33:55.021 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113118848047255552[0;39m ------------- 开始 -------------
+2021-11-09 11:33:55.021 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113118848047255552[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 11:33:55.021 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113118848047255552[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 11:33:55.022 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113118848047255552[0;39m 远程地址: 127.0.0.1
+2021-11-09 11:33:55.022 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113118848047255552[0;39m 请求参数: [{"loginname":"wulinfeng","role":"student"}]
+2021-11-09 11:33:55.022 INFO  rainclassv3.controller.UserController             :53   [32m113118848047255552[0;39m 传入的密码信息为:wulinfeng
+2021-11-09 11:33:55.023 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113118848047255552[0;39m 登录的角色为:student
+2021-11-09 11:33:55.027 INFO  rainclassv3.controller.UserController             :62   [32m113118848047255552[0;39m 生成的用户 token 为:113118848072421376
+2021-11-09 11:33:55.028 ERROR rainclassv3.controller.ControllerExceptionHandler :69   [32m113118848047255552[0;39m 系统异常：
+org.springframework.data.redis.serializer.SerializationException: Cannot serialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to serialize object using DefaultSerializer; nested exception is java.lang.IllegalArgumentException: DefaultSerializer requires a Serializable payload but received an object of type [rainclassv3.resp.StudentLoginResp]
+	at org.springframework.data.redis.serializer.JdkSerializationRedisSerializer.serialize(JdkSerializationRedisSerializer.java:96)
+	at org.springframework.data.redis.core.AbstractOperations.rawValue(AbstractOperations.java:127)
+	at org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:254)
+	at rainclassv3.controller.UserController.login(UserController.java:64)
+	at rainclassv3.controller.UserController$$FastClassBySpringCGLIB$$5fd8e6ac.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at rainclassv3.aspect.LogAspect.doAround(LogAspect.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at rainclassv3.controller.UserController$$EnhancerBySpringCGLIB$$35102aa2.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.core.serializer.support.SerializationFailedException: Failed to serialize object using DefaultSerializer; nested exception is java.lang.IllegalArgumentException: DefaultSerializer requires a Serializable payload but received an object of type [rainclassv3.resp.StudentLoginResp]
+	at org.springframework.core.serializer.support.SerializingConverter.convert(SerializingConverter.java:64)
+	at org.springframework.core.serializer.support.SerializingConverter.convert(SerializingConverter.java:33)
+	at org.springframework.data.redis.serializer.JdkSerializationRedisSerializer.serialize(JdkSerializationRedisSerializer.java:94)
+	... 77 common frames omitted
+Caused by: java.lang.IllegalArgumentException: DefaultSerializer requires a Serializable payload but received an object of type [rainclassv3.resp.StudentLoginResp]
+	at org.springframework.core.serializer.DefaultSerializer.serialize(DefaultSerializer.java:43)
+	at org.springframework.core.serializer.Serializer.serializeToByteArray(Serializer.java:56)
+	at org.springframework.core.serializer.support.SerializingConverter.convert(SerializingConverter.java:60)
+	... 79 common frames omitted
+2021-11-09 11:33:55.030 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m113118848047255552[0;39m Resolved [org.springframework.data.redis.serializer.SerializationException: Cannot serialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to serialize object using DefaultSerializer; nested exception is java.lang.IllegalArgumentException: DefaultSerializer requires a Serializable payload but received an object of type [rainclassv3.resp.StudentLoginResp]]
+2021-11-09 11:34:01.012 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113118873175330816[0;39m ------------- 开始 -------------
+2021-11-09 11:34:01.012 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113118873175330816[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 11:34:01.012 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113118873175330816[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 11:34:01.013 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113118873175330816[0;39m 远程地址: 127.0.0.1
+2021-11-09 11:34:01.013 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113118873175330816[0;39m 请求参数: [{"loginname":"wulinfeng","role":"student"}]
+2021-11-09 11:34:01.013 INFO  rainclassv3.controller.UserController             :53   [32m113118873175330816[0;39m 传入的密码信息为:wulinfeng
+2021-11-09 11:34:01.013 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113118873175330816[0;39m 登录的角色为:student
+2021-11-09 11:34:01.017 INFO  rainclassv3.controller.UserController             :62   [32m113118873175330816[0;39m 生成的用户 token 为:113118873196302336
+2021-11-09 11:34:01.019 ERROR rainclassv3.controller.ControllerExceptionHandler :69   [32m113118873175330816[0;39m 系统异常：
+org.springframework.data.redis.serializer.SerializationException: Cannot serialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to serialize object using DefaultSerializer; nested exception is java.lang.IllegalArgumentException: DefaultSerializer requires a Serializable payload but received an object of type [rainclassv3.resp.StudentLoginResp]
+	at org.springframework.data.redis.serializer.JdkSerializationRedisSerializer.serialize(JdkSerializationRedisSerializer.java:96)
+	at org.springframework.data.redis.core.AbstractOperations.rawValue(AbstractOperations.java:127)
+	at org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:254)
+	at rainclassv3.controller.UserController.login(UserController.java:64)
+	at rainclassv3.controller.UserController$$FastClassBySpringCGLIB$$5fd8e6ac.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at rainclassv3.aspect.LogAspect.doAround(LogAspect.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at rainclassv3.controller.UserController$$EnhancerBySpringCGLIB$$35102aa2.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.core.serializer.support.SerializationFailedException: Failed to serialize object using DefaultSerializer; nested exception is java.lang.IllegalArgumentException: DefaultSerializer requires a Serializable payload but received an object of type [rainclassv3.resp.StudentLoginResp]
+	at org.springframework.core.serializer.support.SerializingConverter.convert(SerializingConverter.java:64)
+	at org.springframework.core.serializer.support.SerializingConverter.convert(SerializingConverter.java:33)
+	at org.springframework.data.redis.serializer.JdkSerializationRedisSerializer.serialize(JdkSerializationRedisSerializer.java:94)
+	... 77 common frames omitted
+Caused by: java.lang.IllegalArgumentException: DefaultSerializer requires a Serializable payload but received an object of type [rainclassv3.resp.StudentLoginResp]
+	at org.springframework.core.serializer.DefaultSerializer.serialize(DefaultSerializer.java:43)
+	at org.springframework.core.serializer.Serializer.serializeToByteArray(Serializer.java:56)
+	at org.springframework.core.serializer.support.SerializingConverter.convert(SerializingConverter.java:60)
+	... 79 common frames omitted
+2021-11-09 11:34:01.022 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m113118873175330816[0;39m Resolved [org.springframework.data.redis.serializer.SerializationException: Cannot serialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to serialize object using DefaultSerializer; nested exception is java.lang.IllegalArgumentException: DefaultSerializer requires a Serializable payload but received an object of type [rainclassv3.resp.StudentLoginResp]]
+2021-11-09 11:35:36.711 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-11-09 11:35:36.720 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-11-09 11:35:46.853 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2021-11-09 11:35:46.861 INFO  rainclassv3.config.RainClassV3Application         :55   [32m                  [0;39m Starting RainClassV3Application using Java 1.8.0_261 on DESKTOP-6AM15DO with PID 8520 (F:\private\rain-class-v3-main\target\classes started by Administrator in F:\private\rain-class-v3-main)
+2021-11-09 11:35:46.861 INFO  rainclassv3.config.RainClassV3Application         :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-09 11:35:46.915 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-09 11:35:46.915 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-09 11:35:47.565 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-09 11:35:47.565 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-09 11:35:47.572 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2021-11-09 11:35:47.582 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-09 11:35:47.583 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-09 11:35:47.593 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-11-09 11:35:48.289 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 9000 (http)
+2021-11-09 11:35:48.296 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-9000"]
+2021-11-09 11:35:48.297 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-09 11:35:48.297 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-11-09 11:35:48.369 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-09 11:35:48.369 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1453 ms
+2021-11-09 11:35:49.340 INFO  rainclassv3.config.CorsConfig                     :43   [32m                  [0;39m 外部尝试访问磁盘图片
+2021-11-09 11:35:49.341 INFO  rainclassv3.config.CorsConfig                     :44   [32m                  [0;39m 拦截器中设置的路径为:file:G:\root\disPic
+2021-11-09 11:35:49.379 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105  [32m                  [0;39m Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-11-09 11:35:49.473 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-11-09 11:35:49.574 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-11-09 11:35:49.847 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-09 11:35:49.864 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-9000"]
+2021-11-09 11:35:49.883 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 9000 (http) with context path ''
+2021-11-09 11:35:49.891 INFO  rainclassv3.config.RainClassV3Application         :61   [32m                  [0;39m Started RainClassV3Application in 3.511 seconds (JVM running for 4.453)
+2021-11-09 11:35:58.734 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-09 11:35:58.734 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-09 11:35:58.735 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2021-11-09 11:35:58.892 INFO  rainclassv3.aspect.LogAspect                      :62   [32m113119367591497728[0;39m ------------- 开始 -------------
+2021-11-09 11:35:58.893 INFO  rainclassv3.aspect.LogAspect                      :63   [32m113119367591497728[0;39m 请求地址: http://127.0.0.1:9000/user/login POST
+2021-11-09 11:35:58.893 INFO  rainclassv3.aspect.LogAspect                      :64   [32m113119367591497728[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-11-09 11:35:58.894 INFO  rainclassv3.aspect.LogAspect                      :65   [32m113119367591497728[0;39m 远程地址: 127.0.0.1
+2021-11-09 11:35:58.949 INFO  rainclassv3.aspect.LogAspect                      :87   [32m113119367591497728[0;39m 请求参数: [{"loginname":"wulinfeng","role":"student"}]
+2021-11-09 11:35:58.953 INFO  rainclassv3.controller.UserController             :53   [32m113119367591497728[0;39m 传入的密码信息为:wulinfeng
+2021-11-09 11:35:58.953 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m113119367591497728[0;39m 登录的角色为:student
+2021-11-09 11:35:59.056 INFO  rainclassv3.controller.UserController             :62   [32m113119367591497728[0;39m 生成的用户 token 为:113119368287752192
+2021-11-09 11:37:20.471 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m30s795ms772µs181ns).
+2021-11-09 11:37:20.478 INFO  rainclassv3.aspect.LogAspect                      :99   [32m113119367591497728[0;39m 返回结果: {"content":{"createtime":1635240891000,"id":108136249159716864,"loginname":"wulinfeng","realname":"吴林峰","role":"student","token":"113119368287752192"},"success":true}
+2021-11-09 11:37:20.478 INFO  rainclassv3.aspect.LogAspect                      :100  [32m113119367591497728[0;39m ------------- 结束 耗时：81588 ms -------------
+2021-11-09 14:20:44.966 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-11-09 14:20:44.979 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
