@@ -200,3 +200,179 @@
 2021-11-12 10:52:33.776 INFO  rainclassv3.controller.UserController             :62   [32m114195604514672640[0;39m 生成的用户 token 为:114195604548227072
 2021-11-12 10:52:33.778 INFO  rainclassv3.aspect.LogAspect                      :99   [32m114195604514672640[0;39m 返回结果: {"content":{"id":1,"loginname":"admin","realname":"吴林峰","role":"admin","token":"114195604548227072"},"success":true}
 2021-11-12 10:52:33.779 INFO  rainclassv3.aspect.LogAspect                      :100  [32m114195604514672640[0;39m ------------- 结束 耗时：11 ms -------------
+2021-12-01 11:43:58.251 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2021-12-01 11:43:58.258 INFO  rainclassv3.config.RainClassV3Application         :55   [32m                  [0;39m Starting RainClassV3Application using Java 1.8.0_191 on DESKTOP-T5DOFAT with PID 93804 (F:\sort-class\choose-class\target\classes started by libiao in F:\sort-class\choose-class)
+2021-12-01 11:43:58.259 INFO  rainclassv3.config.RainClassV3Application         :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-12-01 11:43:58.307 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-01 11:43:58.307 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-01 11:43:58.884 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-01 11:43:58.885 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-12-01 11:43:58.891 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2021-12-01 11:43:58.901 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-01 11:43:58.902 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-12-01 11:43:58.909 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-12-01 11:43:59.477 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 9000 (http)
+2021-12-01 11:43:59.486 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-9000"]
+2021-12-01 11:43:59.487 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-12-01 11:43:59.487 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-12-01 11:43:59.555 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-12-01 11:43:59.555 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1248 ms
+2021-12-01 11:44:00.492 INFO  rainclassv3.config.CorsConfig                     :43   [32m                  [0;39m 外部尝试访问磁盘图片
+2021-12-01 11:44:00.493 INFO  rainclassv3.config.CorsConfig                     :44   [32m                  [0;39m 拦截器中设置的路径为:file:G:\root\disPic
+2021-12-01 11:44:00.533 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105  [32m                  [0;39m Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-01 11:44:00.601 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-12-01 11:44:00.709 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-12-01 11:44:00.949 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-12-01 11:44:00.961 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-9000"]
+2021-12-01 11:44:00.978 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 9000 (http) with context path ''
+2021-12-01 11:44:00.986 INFO  rainclassv3.config.RainClassV3Application         :61   [32m                  [0;39m Started RainClassV3Application in 3.197 seconds (JVM running for 4.208)
+2021-12-01 11:45:03.013 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-01 11:45:03.013 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-12-01 11:45:03.014 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-12-01 11:45:03.149 INFO  rainclassv3.aspect.LogAspect                      :62   [32m121094183418204160[0;39m ------------- 开始 -------------
+2021-12-01 11:45:03.150 INFO  rainclassv3.aspect.LogAspect                      :63   [32m121094183418204160[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-12-01 11:45:03.150 INFO  rainclassv3.aspect.LogAspect                      :64   [32m121094183418204160[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-12-01 11:45:03.150 INFO  rainclassv3.aspect.LogAspect                      :65   [32m121094183418204160[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-12-01 11:45:03.204 INFO  rainclassv3.aspect.LogAspect                      :87   [32m121094183418204160[0;39m 请求参数: [{"loginname":"root","role":"student"}]
+2021-12-01 11:45:03.207 INFO  rainclassv3.controller.UserController             :53   [32m121094183418204160[0;39m 传入的密码信息为:root
+2021-12-01 11:45:03.207 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m121094183418204160[0;39m 登录的角色为:student
+2021-12-01 11:45:03.276 WARN  rainclassv3.controller.ControllerExceptionHandler :54   [32m121094183418204160[0;39m 业务异常：用户名不存在或密码错误
+2021-12-01 11:45:03.293 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m121094183418204160[0;39m Resolved [rainclassv3.exception.BusinessException: 用户名不存在或密码错误]
+2021-12-01 11:45:09.368 INFO  rainclassv3.aspect.LogAspect                      :62   [32m121094209506775040[0;39m ------------- 开始 -------------
+2021-12-01 11:45:09.368 INFO  rainclassv3.aspect.LogAspect                      :63   [32m121094209506775040[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-12-01 11:45:09.368 INFO  rainclassv3.aspect.LogAspect                      :64   [32m121094209506775040[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-12-01 11:45:09.368 INFO  rainclassv3.aspect.LogAspect                      :65   [32m121094209506775040[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-12-01 11:45:09.368 INFO  rainclassv3.aspect.LogAspect                      :87   [32m121094209506775040[0;39m 请求参数: [{"loginname":"root","role":"admin"}]
+2021-12-01 11:45:09.369 INFO  rainclassv3.controller.UserController             :53   [32m121094209506775040[0;39m 传入的密码信息为:root
+2021-12-01 11:45:09.369 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m121094209506775040[0;39m 登录的角色为:admin
+2021-12-01 11:45:09.379 INFO  rainclassv3.controller.UserController             :62   [32m121094209506775040[0;39m 生成的用户 token 为:121094209552912384
+2021-12-01 11:45:10.060 INFO  rainclassv3.aspect.LogAspect                      :99   [32m121094209506775040[0;39m 返回结果: {"content":{"id":1,"loginname":"root","realname":"root","role":"admin","token":"121094209552912384"},"success":true}
+2021-12-01 11:45:10.061 INFO  rainclassv3.aspect.LogAspect                      :100  [32m121094209506775040[0;39m ------------- 结束 耗时：693 ms -------------
+2021-12-01 12:03:52.289 WARN  rainclassv3.controller.ControllerExceptionHandler :39   [32m                  [0;39m 参数校验失败：密码不能为空
+2021-12-01 12:03:52.291 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public rainclassv3.resp.CommonResp rainclassv3.controller.UserController.login(rainclassv3.req.UserLoginReq): [Field error in object 'userLoginReq' on field 'password': rejected value []; codes [NotEmpty.userLoginReq.password,NotEmpty.password,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userLoginReq.password,password]; arguments []; default message [password]]; default message [密码不能为空]] ]
+2021-12-01 12:03:56.983 INFO  rainclassv3.aspect.LogAspect                      :62   [32m121098939066880000[0;39m ------------- 开始 -------------
+2021-12-01 12:03:56.984 INFO  rainclassv3.aspect.LogAspect                      :63   [32m121098939066880000[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-12-01 12:03:56.984 INFO  rainclassv3.aspect.LogAspect                      :64   [32m121098939066880000[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-12-01 12:03:56.984 INFO  rainclassv3.aspect.LogAspect                      :65   [32m121098939066880000[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-12-01 12:03:56.984 INFO  rainclassv3.aspect.LogAspect                      :87   [32m121098939066880000[0;39m 请求参数: [{"loginname":"root","role":"admin"}]
+2021-12-01 12:03:56.984 INFO  rainclassv3.controller.UserController             :53   [32m121098939066880000[0;39m 传入的密码信息为:root
+2021-12-01 12:03:56.984 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m121098939066880000[0;39m 登录的角色为:admin
+2021-12-01 12:03:56.988 INFO  rainclassv3.controller.UserController             :62   [32m121098939066880000[0;39m 生成的用户 token 为:121098939087851520
+2021-12-01 12:03:57.002 INFO  rainclassv3.aspect.LogAspect                      :99   [32m121098939066880000[0;39m 返回结果: {"content":{"id":1,"loginname":"root","realname":"root","role":"admin","token":"121098939087851520"},"success":true}
+2021-12-01 12:03:57.002 INFO  rainclassv3.aspect.LogAspect                      :100  [32m121098939066880000[0;39m ------------- 结束 耗时：19 ms -------------
+2021-12-01 12:06:25.488 INFO  rainclassv3.aspect.LogAspect                      :62   [32m121099561941995520[0;39m ------------- 开始 -------------
+2021-12-01 12:06:25.488 INFO  rainclassv3.aspect.LogAspect                      :63   [32m121099561941995520[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-12-01 12:06:25.488 INFO  rainclassv3.aspect.LogAspect                      :64   [32m121099561941995520[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-12-01 12:06:25.488 INFO  rainclassv3.aspect.LogAspect                      :65   [32m121099561941995520[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-12-01 12:06:25.489 INFO  rainclassv3.aspect.LogAspect                      :87   [32m121099561941995520[0;39m 请求参数: [{"loginname":"student","role":"student"}]
+2021-12-01 12:06:25.489 INFO  rainclassv3.controller.UserController             :53   [32m121099561941995520[0;39m 传入的密码信息为:student
+2021-12-01 12:06:25.489 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m121099561941995520[0;39m 登录的角色为:student
+2021-12-01 12:06:25.498 INFO  rainclassv3.controller.UserController             :62   [32m121099561941995520[0;39m 生成的用户 token 为:121099561983938560
+2021-12-01 12:06:25.501 INFO  rainclassv3.aspect.LogAspect                      :99   [32m121099561941995520[0;39m 返回结果: {"content":{"id":1,"loginname":"student","realname":"student","role":"student","token":"121099561983938560"},"success":true}
+2021-12-01 12:06:25.502 INFO  rainclassv3.aspect.LogAspect                      :100  [32m121099561941995520[0;39m ------------- 结束 耗时：14 ms -------------
+2021-12-01 14:32:49.805 INFO  rainclassv3.aspect.LogAspect                      :62   [32m121136406037925888[0;39m ------------- 开始 -------------
+2021-12-01 14:32:49.808 INFO  rainclassv3.aspect.LogAspect                      :63   [32m121136406037925888[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-12-01 14:32:49.808 INFO  rainclassv3.aspect.LogAspect                      :64   [32m121136406037925888[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-12-01 14:32:49.808 INFO  rainclassv3.aspect.LogAspect                      :65   [32m121136406037925888[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-12-01 14:32:49.809 INFO  rainclassv3.aspect.LogAspect                      :87   [32m121136406037925888[0;39m 请求参数: [{"loginname":"root","role":"student"}]
+2021-12-01 14:32:49.809 INFO  rainclassv3.controller.UserController             :53   [32m121136406037925888[0;39m 传入的密码信息为:root
+2021-12-01 14:32:49.809 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m121136406037925888[0;39m 登录的角色为:student
+2021-12-01 14:32:49.817 WARN  rainclassv3.controller.ControllerExceptionHandler :54   [32m121136406037925888[0;39m 业务异常：用户名不存在或密码错误
+2021-12-01 14:32:49.819 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m121136406037925888[0;39m Resolved [rainclassv3.exception.BusinessException: 用户名不存在或密码错误]
+2021-12-01 14:32:52.856 INFO  rainclassv3.aspect.LogAspect                      :62   [32m121136418830553088[0;39m ------------- 开始 -------------
+2021-12-01 14:32:52.856 INFO  rainclassv3.aspect.LogAspect                      :63   [32m121136418830553088[0;39m 请求地址: http://localhost:9000/user/login POST
+2021-12-01 14:32:52.856 INFO  rainclassv3.aspect.LogAspect                      :64   [32m121136418830553088[0;39m 类名方法: rainclassv3.controller.UserController.login
+2021-12-01 14:32:52.856 INFO  rainclassv3.aspect.LogAspect                      :65   [32m121136418830553088[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-12-01 14:32:52.856 INFO  rainclassv3.aspect.LogAspect                      :87   [32m121136418830553088[0;39m 请求参数: [{"loginname":"root","role":"admin"}]
+2021-12-01 14:32:52.856 INFO  rainclassv3.controller.UserController             :53   [32m121136418830553088[0;39m 传入的密码信息为:root
+2021-12-01 14:32:52.857 INFO  rainclassv3.service.impl.UserServiceImpl          :63   [32m121136418830553088[0;39m 登录的角色为:admin
+2021-12-01 14:32:52.867 INFO  rainclassv3.controller.UserController             :62   [32m121136418830553088[0;39m 生成的用户 token 为:121136418880884736
+2021-12-01 14:32:52.872 INFO  rainclassv3.aspect.LogAspect                      :99   [32m121136418830553088[0;39m 返回结果: {"content":{"id":1,"loginname":"root","realname":"root","role":"admin","token":"121136418880884736"},"success":true}
+2021-12-01 14:32:52.873 INFO  rainclassv3.aspect.LogAspect                      :100  [32m121136418830553088[0;39m ------------- 结束 耗时：18 ms -------------
+2021-12-01 14:58:43.018 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-12-01 14:58:43.024 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-12-01 14:58:47.482 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2021-12-01 14:58:47.491 INFO  rainclassv3.config.RainClassV3Application         :55   [32m                  [0;39m Starting RainClassV3Application using Java 1.8.0_191 on DESKTOP-T5DOFAT with PID 26312 (F:\sort-class\choose-class\target\classes started by libiao in F:\sort-class\choose-class)
+2021-12-01 14:58:47.491 INFO  rainclassv3.config.RainClassV3Application         :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-12-01 14:58:47.554 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-01 14:58:47.554 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-01 14:58:48.114 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-01 14:58:48.114 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-12-01 14:58:48.121 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2021-12-01 14:58:48.130 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-01 14:58:48.131 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-12-01 14:58:48.139 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-12-01 14:58:48.758 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 9090 (http)
+2021-12-01 14:58:48.765 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-9090"]
+2021-12-01 14:58:48.766 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-12-01 14:58:48.766 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-12-01 14:58:48.835 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-12-01 14:58:48.835 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1280 ms
+2021-12-01 14:58:49.710 INFO  rainclassv3.config.CorsConfig                     :43   [32m                  [0;39m 外部尝试访问磁盘图片
+2021-12-01 14:58:49.711 INFO  rainclassv3.config.CorsConfig                     :44   [32m                  [0;39m 拦截器中设置的路径为:file:F:\sort-class\file
+2021-12-01 14:58:49.748 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105  [32m                  [0;39m Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-01 14:58:49.815 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-12-01 14:58:49.908 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-12-01 14:58:50.180 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-12-01 14:58:50.191 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-9090"]
+2021-12-01 14:58:50.208 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 9090 (http) with context path ''
+2021-12-01 14:58:50.216 INFO  rainclassv3.config.RainClassV3Application         :61   [32m                  [0;39m Started RainClassV3Application in 3.275 seconds (JVM running for 4.37)
+2021-12-01 14:59:12.484 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-01 14:59:12.484 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-12-01 14:59:12.485 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-12-01 14:59:22.179 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-12-01 14:59:22.184 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-12-01 14:59:25.784 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2021-12-01 14:59:25.791 INFO  rainclassv3.config.RainClassV3Application         :55   [32m                  [0;39m Starting RainClassV3Application using Java 1.8.0_191 on DESKTOP-T5DOFAT with PID 33188 (F:\sort-class\choose-class\target\classes started by libiao in F:\sort-class\choose-class)
+2021-12-01 14:59:25.792 INFO  rainclassv3.config.RainClassV3Application         :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-12-01 14:59:25.853 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-01 14:59:25.853 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-01 14:59:26.408 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-01 14:59:26.408 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-12-01 14:59:26.415 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2021-12-01 14:59:26.424 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-01 14:59:26.425 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-12-01 14:59:26.433 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-12-01 14:59:27.029 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 9000 (http)
+2021-12-01 14:59:27.039 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-9000"]
+2021-12-01 14:59:27.040 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-12-01 14:59:27.040 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-12-01 14:59:27.103 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-12-01 14:59:27.103 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1250 ms
+2021-12-01 14:59:27.968 INFO  rainclassv3.config.CorsConfig                     :43   [32m                  [0;39m 外部尝试访问磁盘图片
+2021-12-01 14:59:27.969 INFO  rainclassv3.config.CorsConfig                     :44   [32m                  [0;39m 拦截器中设置的路径为:file:F:\sort-class\file
+2021-12-01 14:59:28.004 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105  [32m                  [0;39m Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-01 14:59:28.073 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-12-01 14:59:28.161 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-12-01 14:59:28.411 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-12-01 14:59:28.422 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-9000"]
+2021-12-01 14:59:28.438 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 9000 (http) with context path ''
+2021-12-01 14:59:28.446 INFO  rainclassv3.config.RainClassV3Application         :61   [32m                  [0;39m Started RainClassV3Application in 3.207 seconds (JVM running for 4.529)
+2021-12-01 15:00:38.783 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-12-01 15:00:38.789 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-12-01 15:00:41.831 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2021-12-01 15:00:41.837 INFO  rainclassv3.config.RainClassV3Application         :55   [32m                  [0;39m Starting RainClassV3Application using Java 1.8.0_191 on DESKTOP-T5DOFAT with PID 88272 (F:\sort-class\choose-class\target\classes started by libiao in F:\sort-class\choose-class)
+2021-12-01 15:00:41.838 INFO  rainclassv3.config.RainClassV3Application         :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-12-01 15:00:41.901 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-01 15:00:41.902 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-01 15:00:42.495 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-01 15:00:42.495 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-12-01 15:00:42.502 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2021-12-01 15:00:42.511 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-01 15:00:42.513 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-12-01 15:00:42.520 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-12-01 15:00:43.113 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 9000 (http)
+2021-12-01 15:00:43.121 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-9000"]
+2021-12-01 15:00:43.121 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-12-01 15:00:43.122 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-12-01 15:00:43.184 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-12-01 15:00:43.184 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1282 ms
+2021-12-01 15:00:44.030 INFO  rainclassv3.config.CorsConfig                     :43   [32m                  [0;39m 外部尝试访问磁盘图片
+2021-12-01 15:00:44.031 INFO  rainclassv3.config.CorsConfig                     :44   [32m                  [0;39m 拦截器中设置的路径为:file:F:\sort-class\file
+2021-12-01 15:00:44.081 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105  [32m                  [0;39m Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-01 15:00:44.161 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-12-01 15:00:44.252 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-12-01 15:00:44.530 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-12-01 15:00:44.544 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-9000"]
+2021-12-01 15:00:44.560 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 9000 (http) with context path ''
+2021-12-01 15:00:44.568 INFO  rainclassv3.config.RainClassV3Application         :61   [32m                  [0;39m Started RainClassV3Application in 3.312 seconds (JVM running for 4.371)

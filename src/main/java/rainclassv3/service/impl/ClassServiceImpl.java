@@ -85,7 +85,6 @@ public class ClassServiceImpl implements ClassService {
         List<Class> classes = classMapper.selectByExample(classExample);
 
         PageInfo<Class> pageInfo = new PageInfo<>(classes);
-
         List<ClassQueryResp> classQueryResps = CopyUtil.copyList(classes, ClassQueryResp.class);
         for (ClassQueryResp classQueryResp : classQueryResps) {
             Teacher teacher = teacherMapper.selectByPrimaryKey(classQueryResp.getTeacherid());

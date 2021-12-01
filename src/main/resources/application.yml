@@ -59,6 +59,6 @@ mybatis:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 disPic:
-  file-path: G:\root\disPic
+  file-path: F:\sort-class\file
   web-path: http://127.0.0.1:9000/disPic/
 
