@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import rainclassv3.req.*;
 import rainclassv3.resp.CommonResp;
 import rainclassv3.resp.PageResp;
-import rainclassv3.resp.StudentMyScoreResp;
+import rainclassv3.resp.StudentResp;
 import rainclassv3.service.StudentService;
 
 import javax.annotation.Resource;
@@ -25,10 +25,17 @@ import java.util.List;
 @RequestMapping("/student")
 public class StudentController {
 
-    private static final Logger LOG= LoggerFactory.getLogger(StudentController.class);
+    private static final Logger LOG = LoggerFactory.getLogger(StudentController.class);
 
     @Resource
     private StudentService studentService;
+
+    @GetMapping("/all")
+    public List<StudentResp> getALl(){
+        List<StudentResp> studentResps = studentService.getAll();
+        return studentResps;
+    }
+
 
 
     /**
@@ -53,7 +60,7 @@ public class StudentController {
      */
     @GetMapping("/isChosen")
     public CommonResp isChosen(StudentIsChosenReq req) {
-        LOG.info("/isChosen 传入的信息为:{}"+req);
+        LOG.info("/isChosen 传入的信息为:{}" + req);
         boolean res = studentService.isChosen(req);
         CommonResp commonResp = new CommonResp();
         commonResp.setContent(res);
@@ -63,6 +70,7 @@ public class StudentController {
 
     /**
      * 获取当前学生已经选择的课程的接口
+     *
      * @return
      */
     @GetMapping("/myClass")
@@ -76,6 +84,7 @@ public class StudentController {
 
     /**
      * 选课接口
+     *
      * @return
      */
     @RequestMapping("/selectClass")
@@ -88,6 +97,7 @@ public class StudentController {
 
     /**
      * 退选接口
+     *
      * @return
      */
     @RequestMapping("/cancelClass")
@@ -100,20 +110,17 @@ public class StudentController {
 
     /**
      * 学生 获取我的成绩接口
+     *
      * @return
      */
     @GetMapping("/myScore")
     public CommonResp myScore(StudentMyScoreReq req) {
         PageResp myScore = studentService.getMyScore(req);
-        LOG.info("查询到的学生成绩信息为:{}",myScore);
+        LOG.info("查询到的学生成绩信息为:{}", myScore);
         CommonResp commonResp = new CommonResp();
         commonResp.setContent(myScore);
         return commonResp;
     }
-
-
-
-
 
 
 }

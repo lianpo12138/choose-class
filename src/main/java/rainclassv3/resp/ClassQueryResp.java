@@ -45,4 +45,9 @@ public class ClassQueryResp {
      * 教授课程的教师信息
      */
     private Teacher teacher;
+
+    private Integer creditHours;
+
+    private Integer isexam;
+
 }

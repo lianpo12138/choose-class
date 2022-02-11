@@ -15,6 +15,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class PasswordCheckReq {
+
+    // 原密码
     private String origin;
     private String token;
 }

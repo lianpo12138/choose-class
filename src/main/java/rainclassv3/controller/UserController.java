@@ -89,10 +89,9 @@ public class UserController {
      */
     @PostMapping("/changePassword")
     public CommonResp changePassword(@RequestBody @Valid PasswordChangeReq req) {
-
-
-        CommonResp commonResp = new CommonResp();
-        return commonResp;
+        userService.changePassword(req);
+        LOG.info(req.getId()+"的用户修改秘密为："+req.getNewPassword());
+        return new CommonResp();
     }
 
     /**

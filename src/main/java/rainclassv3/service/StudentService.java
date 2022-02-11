@@ -1,10 +1,13 @@
 package rainclassv3.service;
 
+import rainclassv3.pojo.Student;
 import rainclassv3.req.*;
 import rainclassv3.resp.PageResp;
 import rainclassv3.resp.StudentMyScoreResp;
+import rainclassv3.resp.StudentResp;
 
 import java.util.List;
+
 
 public interface StudentService {
 
@@ -44,4 +47,11 @@ public interface StudentService {
      * @return
      */
     PageResp getMyScore(StudentMyScoreReq req);
+
+    /*
+    *  获取所有学生信息
+    *
+    */
+    List<StudentResp> getAll();
+
 }

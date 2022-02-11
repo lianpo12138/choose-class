@@ -24,10 +24,7 @@ import rainclassv3.resp.ClassQueryResp;
 import rainclassv3.resp.PageResp;
 import rainclassv3.resp.PicUploadResp;
 import rainclassv3.service.ClassService;
-import rainclassv3.util.CopyUtil;
-import rainclassv3.util.FileUtil;
-import rainclassv3.util.SnowFlake;
-import rainclassv3.util.ValidType;
+import rainclassv3.util.*;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;
@@ -107,7 +104,8 @@ public class ClassServiceImpl implements ClassService {
      */
     @Override
     public List<Class> getAll() {
-        List<Class> classes = classMapper.selectByExample(null);
+        ClassExample example = new ClassExample();
+        List<Class> classes = classMapper.selectByExample(example);
         return classes;
     }
 
@@ -125,6 +123,7 @@ public class ClassServiceImpl implements ClassService {
             //新增
             req.setId(snowFlake.nextId());
             Class copy = CopyUtil.copy(req, Class.class);
+
             copy.setCreatetime(new Date());
             count = classMapper.insert(copy);
         } else {

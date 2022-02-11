@@ -1,5 +1,6 @@
 package rainclassv3.service.impl;
 
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,11 +17,13 @@ import rainclassv3.req.StudentMyScoreReq;
 import rainclassv3.resp.ClassQueryResp;
 import rainclassv3.resp.PageResp;
 import rainclassv3.resp.StudentMyScoreResp;
+import rainclassv3.resp.StudentResp;
 import rainclassv3.service.StudentService;
 import rainclassv3.util.CopyUtil;
 import rainclassv3.util.SnowFlake;
 
 import javax.annotation.Resource;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -52,6 +55,7 @@ public class StudentServiceImpl implements StudentService {
     /**
      * 查询学生是否选择该课程
      * 需要三表联查： student表和class表，score 作为中间表
+     *
      * @param req
      * @return
      */
@@ -68,7 +72,7 @@ public class StudentServiceImpl implements StudentService {
         List<Score> scores = scoreMapper.selectByExample(scoreExample);
 
         for (Score score : scores) {
-            if (score.getClassid()==classId) {
+            if (score.getClassid() == classId) {
                 return true;
             }
         }
@@ -163,17 +167,18 @@ public class StudentServiceImpl implements StudentService {
          */
         long id = snowFlake.nextId();
         score.setId(id);
-        
+
         scoreMapper.insert(score);
     }
 
 
     /**
      * 获取当前学生的所有课程的成绩
+     *
      * @param req
      * @return
      */
-    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     @Override
     public PageResp getMyScore(StudentMyScoreReq req) {
         long studentId = Long.parseLong(req.getStudentid());
@@ -197,5 +202,21 @@ public class StudentServiceImpl implements StudentService {
         pageResp.setList(studentMyScoreResps);
 
         return pageResp;
+    }
+
+    /*
+     *  获取全部学生的信息
+     * */
+    @Override
+    public List<StudentResp> getAll() {
+        List<Student> students = studentMapper.selectByExample(null);
+        List<StudentResp> studentResps = new ArrayList<>();
+
+        for (Student student : students) {
+            StudentResp studentResp = new StudentResp();
+            BeanUtils.copyProperties(student, studentResp);
+            studentResps.add(studentResp);
+        }
+        return studentResps;
     }
 }

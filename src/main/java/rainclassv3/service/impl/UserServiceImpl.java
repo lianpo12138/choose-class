@@ -2,6 +2,7 @@ package rainclassv3.service.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
 import rainclassv3.exception.BusinessException;
 import rainclassv3.exception.BusinessExceptionCode;
@@ -116,8 +117,7 @@ public class UserServiceImpl implements UserService {
 
 
     /**
-     * 更改密码
-     * 这里暂时先不写，等后面有时间了再说
+     * 根据id修改用户密码
      * @param req
      */
     @Override
@@ -125,11 +125,22 @@ public class UserServiceImpl implements UserService {
         String role = req.getRole();
         switch (role) {
             case "student":
-                // req.get
+                Student student = new Student();
+                student.setId(Long.parseLong(req.getId()));
+                student.setPassword(req.getNewPassword());
+                studentMapper.updateByPrimaryKeySelective(student);
                 break;
             case "teacher":
+                Teacher teacher = new Teacher();
+                teacher.setPassword(req.getNewPassword());
+                teacher.setId(Long.parseLong(req.getId()));
+                teacherMapper.updateByPrimaryKeySelective(teacher);
                 break;
             case "admin":
+                Admin admin = new Admin();
+                admin.setId(Long.parseLong(req.getId()));
+                admin.setPassword(req.getNewPassword());
+                adminMapper.updateByPrimaryKeySelective(admin);
                 break;
         }
     }
