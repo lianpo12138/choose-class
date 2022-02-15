@@ -58,6 +58,12 @@ mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
+#分页pageHelper
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+
 disPic:
   file-path: F:\sort-class\file
   web-path: http://127.0.0.1:9000/disPic/

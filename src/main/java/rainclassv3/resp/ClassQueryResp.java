@@ -16,6 +16,8 @@ import rainclassv3.pojo.Teacher;
 @NoArgsConstructor
 @Data
 public class ClassQueryResp {
+
+
     private Long id;
 
     private String classname;
