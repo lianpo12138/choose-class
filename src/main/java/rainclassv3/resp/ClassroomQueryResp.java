@@ -18,4 +18,7 @@ public class ClassroomQueryResp {
 
     private String building;
 
+    /* 可容纳人数*/
+    private Integer capacity;
+
 }

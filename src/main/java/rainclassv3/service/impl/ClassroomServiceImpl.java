@@ -38,20 +38,13 @@ public class ClassroomServiceImpl implements ClassroomService {
         /* 设置起始页面和分页大小*/
         PageHelper.startPage(req.getPageNum(), req.getPageSize());
         ClassRoomExample example = new ClassRoomExample();
-        String[] s = req.getQuery().split(",");
-        /* 当query能被，分割时，表示根据教学楼集合查询*/
-        if (s.length > 1) {
-            example.createCriteria().andBuildingIn(Arrays.asList(s));
-        } else {
-            /* 查询条件*/
-            String query = req.getQuery().isEmpty() ? "%%" : "%" + req.getQuery() + "%";
-            /* 根据教室名 教室功能 所在教学楼 校区 模糊查询*/
-            example.createCriteria().andNameLike(query);
-            example.or(example.createCriteria().andFunctionLike(query));
-            example.or(example.createCriteria().andBuildingLike(query));
-            example.or(example.createCriteria().andOriginLike(query));
-        }
-
+        /* 查询条件*/
+        String query = req.getQuery()==null ? "%%" : "%" + req.getQuery() + "%";
+        /* 根据教室名 教室功能 所在教学楼 校区 模糊查询*/
+        example.createCriteria().andNameLike(query);
+        example.or(example.createCriteria().andFunctionLike(query));
+        example.or(example.createCriteria().andBuildingLike(query));
+        example.or(example.createCriteria().andOriginLike(query));
         example.setOrderByClause("name asc");
         List<ClassRoom> classRooms = classRoomMapper.selectByExample(example);
         PageInfo<ClassRoom> info = new PageInfo<>(classRooms);
@@ -65,7 +58,7 @@ public class ClassroomServiceImpl implements ClassroomService {
     }
 
     @Override
-    public List listBuilding(){
+    public List listBuilding() {
         return classRoomMapper.groupbyBuilding();
     }
 }

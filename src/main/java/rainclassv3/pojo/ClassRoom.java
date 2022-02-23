@@ -13,13 +13,16 @@ public class ClassRoom {
 
     private String building;
 
-    public ClassRoom(Integer id, String classroomId, String name, String origin, String function, String building) {
+    private Integer capacity;
+
+    public ClassRoom(Integer id, String classroomId, String name, String origin, String function, String building, Integer capacity) {
         this.id = id;
         this.classroomId = classroomId;
         this.name = name;
         this.origin = origin;
         this.function = function;
         this.building = building;
+        this.capacity = capacity;
     }
 
     public ClassRoom() {
@@ -72,5 +75,13 @@ public class ClassRoom {
 
     public void setBuilding(String building) {
         this.building = building == null ? null : building.trim();
+    }
+
+    public Integer getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(Integer capacity) {
+        this.capacity = capacity;
     }
 }

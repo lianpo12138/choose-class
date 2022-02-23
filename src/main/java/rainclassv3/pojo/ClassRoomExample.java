@@ -513,6 +513,66 @@ public class ClassRoomExample {
             addCriterion("building not between", value1, value2, "building");
             return (Criteria) this;
         }
+
+        public Criteria andCapacityIsNull() {
+            addCriterion("capacity is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCapacityIsNotNull() {
+            addCriterion("capacity is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCapacityEqualTo(Integer value) {
+            addCriterion("capacity =", value, "capacity");
+            return (Criteria) this;
+        }
+
+        public Criteria andCapacityNotEqualTo(Integer value) {
+            addCriterion("capacity <>", value, "capacity");
+            return (Criteria) this;
+        }
+
+        public Criteria andCapacityGreaterThan(Integer value) {
+            addCriterion("capacity >", value, "capacity");
+            return (Criteria) this;
+        }
+
+        public Criteria andCapacityGreaterThanOrEqualTo(Integer value) {
+            addCriterion("capacity >=", value, "capacity");
+            return (Criteria) this;
+        }
+
+        public Criteria andCapacityLessThan(Integer value) {
+            addCriterion("capacity <", value, "capacity");
+            return (Criteria) this;
+        }
+
+        public Criteria andCapacityLessThanOrEqualTo(Integer value) {
+            addCriterion("capacity <=", value, "capacity");
+            return (Criteria) this;
+        }
+
+        public Criteria andCapacityIn(List<Integer> values) {
+            addCriterion("capacity in", values, "capacity");
+            return (Criteria) this;
+        }
+
+        public Criteria andCapacityNotIn(List<Integer> values) {
+            addCriterion("capacity not in", values, "capacity");
+            return (Criteria) this;
+        }
+
+        public Criteria andCapacityBetween(Integer value1, Integer value2) {
+            addCriterion("capacity between", value1, value2, "capacity");
+            return (Criteria) this;
+        }
+
+        public Criteria andCapacityNotBetween(Integer value1, Integer value2) {
+            addCriterion("capacity not between", value1, value2, "capacity");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {

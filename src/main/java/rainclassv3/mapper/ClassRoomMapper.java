@@ -1,12 +1,10 @@
 package rainclassv3.mapper;
 
 import java.util.List;
-
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import rainclassv3.pojo.ClassRoom;
 import rainclassv3.pojo.ClassRoomExample;
-@Mapper
+
 public interface ClassRoomMapper {
     long countByExample(ClassRoomExample example);
 
