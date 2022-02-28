@@ -17,39 +17,23 @@ import rainclassv3.pojo.Teacher;
 @Data
 public class ClassQueryResp {
 
-
     private Long id;
 
     private String classname;
 
     private Long teacherid;
 
-    private String starttime;
-
-    private String code;
-
-    private String place;
-
     private String notice;
 
-    private String type;
 
-    private Integer credit;
+    private Integer planNum;
 
-    private String desc;
+    private Integer realityNum;
 
-    /**
-     * 课程封面名称
-     */
-    private String path;
+    private String simpleTime;
 
-    /**
-     * 教授课程的教师信息
-     */
     private Teacher teacher;
 
-    private Integer creditHours;
 
-    private Integer isexam;
 
 }

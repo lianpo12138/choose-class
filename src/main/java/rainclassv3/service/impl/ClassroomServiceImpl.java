@@ -41,10 +41,10 @@ public class ClassroomServiceImpl implements ClassroomService {
         /* 查询条件*/
         String query = req.getQuery()==null ? "%%" : "%" + req.getQuery() + "%";
         /* 根据教室名 教室功能 所在教学楼 校区 模糊查询*/
-        example.createCriteria().andNameLike(query);
-        example.or(example.createCriteria().andFunctionLike(query));
-        example.or(example.createCriteria().andBuildingLike(query));
-        example.or(example.createCriteria().andOriginLike(query));
+        example.or().andNameLike(query);
+        example.or().andFunctionLike(query);
+        example.or().andBuildingLike(query);
+        example.or().andOriginLike(query);
         example.setOrderByClause("name asc");
         List<ClassRoom> classRooms = classRoomMapper.selectByExample(example);
         PageInfo<ClassRoom> info = new PageInfo<>(classRooms);

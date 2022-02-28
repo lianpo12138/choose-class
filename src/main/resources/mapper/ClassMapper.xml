@@ -6,16 +6,15 @@
       <idArg column="id" javaType="java.lang.Long" jdbcType="BIGINT" />
       <arg column="classname" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="teacherid" javaType="java.lang.Long" jdbcType="BIGINT" />
-      <arg column="starttime" javaType="java.lang.String" jdbcType="VARCHAR" />
-      <arg column="code" javaType="java.lang.String" jdbcType="VARCHAR" />
-      <arg column="place" javaType="java.lang.String" jdbcType="VARCHAR" />
-      <arg column="notice" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="type" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="credit" javaType="java.lang.Integer" jdbcType="INTEGER" />
-      <arg column="createtime" javaType="java.util.Date" jdbcType="TIMESTAMP" />
-      <arg column="path" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="credit_hours" javaType="java.lang.Integer" jdbcType="INTEGER" />
-      <arg column="isexam" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="term" javaType="java.lang.String" jdbcType="CHAR" />
+      <arg column="plan_num" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="reality_num" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="createtime" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="notice" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="simple_time" javaType="java.lang.String" jdbcType="VARCHAR" />
     </constructor>
   </resultMap>
   <sql id="Example_Where_Clause">
@@ -77,8 +76,8 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, classname, teacherid, starttime, code, place, notice, type, credit, createtime, 
-    path, credit_hours, isexam
+    id, classname, teacherid, type, credit, credit_hours, term, plan_num, reality_num, 
+    createtime, notice, simple_time
   </sql>
   <select id="selectByExample" parameterType="rainclassv3.pojo.ClassExample" resultMap="BaseResultMap">
     select
@@ -112,15 +111,15 @@
   </delete>
   <insert id="insert" parameterType="rainclassv3.pojo.Class">
     insert into class (id, classname, teacherid, 
-      starttime, code, place, 
-      notice, type, credit, 
-      createtime, path, credit_hours, 
-      isexam)
+      type, credit, credit_hours, 
+      term, plan_num, reality_num, 
+      createtime, notice, simple_time
+      )
     values (#{id,jdbcType=BIGINT}, #{classname,jdbcType=VARCHAR}, #{teacherid,jdbcType=BIGINT}, 
-      #{starttime,jdbcType=VARCHAR}, #{code,jdbcType=VARCHAR}, #{place,jdbcType=VARCHAR}, 
-      #{notice,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, #{credit,jdbcType=INTEGER}, 
-      #{createtime,jdbcType=TIMESTAMP}, #{path,jdbcType=VARCHAR}, #{creditHours,jdbcType=INTEGER}, 
-      #{isexam,jdbcType=INTEGER})
+      #{type,jdbcType=VARCHAR}, #{credit,jdbcType=INTEGER}, #{creditHours,jdbcType=INTEGER}, 
+      #{term,jdbcType=CHAR}, #{planNum,jdbcType=INTEGER}, #{realityNum,jdbcType=INTEGER}, 
+      #{createtime,jdbcType=TIMESTAMP}, #{notice,jdbcType=VARCHAR}, #{simpleTime,jdbcType=VARCHAR}
+      )
   </insert>
   <insert id="insertSelective" parameterType="rainclassv3.pojo.Class">
     insert into class
@@ -134,35 +133,32 @@
       <if test="teacherid != null">
         teacherid,
       </if>
-      <if test="starttime != null">
-        starttime,
-      </if>
-      <if test="code != null">
-        code,
-      </if>
-      <if test="place != null">
-        place,
-      </if>
-      <if test="notice != null">
-        notice,
-      </if>
       <if test="type != null">
         type,
       </if>
       <if test="credit != null">
         credit,
       </if>
-      <if test="createtime != null">
-        createtime,
-      </if>
-      <if test="path != null">
-        path,
-      </if>
       <if test="creditHours != null">
         credit_hours,
       </if>
-      <if test="isexam != null">
-        isexam,
+      <if test="term != null">
+        term,
+      </if>
+      <if test="planNum != null">
+        plan_num,
+      </if>
+      <if test="realityNum != null">
+        reality_num,
+      </if>
+      <if test="createtime != null">
+        createtime,
+      </if>
+      <if test="notice != null">
+        notice,
+      </if>
+      <if test="simpleTime != null">
+        simple_time,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -175,35 +171,32 @@
       <if test="teacherid != null">
         #{teacherid,jdbcType=BIGINT},
       </if>
-      <if test="starttime != null">
-        #{starttime,jdbcType=VARCHAR},
-      </if>
-      <if test="code != null">
-        #{code,jdbcType=VARCHAR},
-      </if>
-      <if test="place != null">
-        #{place,jdbcType=VARCHAR},
-      </if>
-      <if test="notice != null">
-        #{notice,jdbcType=VARCHAR},
-      </if>
       <if test="type != null">
         #{type,jdbcType=VARCHAR},
       </if>
       <if test="credit != null">
         #{credit,jdbcType=INTEGER},
       </if>
-      <if test="createtime != null">
-        #{createtime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="path != null">
-        #{path,jdbcType=VARCHAR},
-      </if>
       <if test="creditHours != null">
         #{creditHours,jdbcType=INTEGER},
       </if>
-      <if test="isexam != null">
-        #{isexam,jdbcType=INTEGER},
+      <if test="term != null">
+        #{term,jdbcType=CHAR},
+      </if>
+      <if test="planNum != null">
+        #{planNum,jdbcType=INTEGER},
+      </if>
+      <if test="realityNum != null">
+        #{realityNum,jdbcType=INTEGER},
+      </if>
+      <if test="createtime != null">
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="notice != null">
+        #{notice,jdbcType=VARCHAR},
+      </if>
+      <if test="simpleTime != null">
+        #{simpleTime,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -225,35 +218,32 @@
       <if test="record.teacherid != null">
         teacherid = #{record.teacherid,jdbcType=BIGINT},
       </if>
-      <if test="record.starttime != null">
-        starttime = #{record.starttime,jdbcType=VARCHAR},
-      </if>
-      <if test="record.code != null">
-        code = #{record.code,jdbcType=VARCHAR},
-      </if>
-      <if test="record.place != null">
-        place = #{record.place,jdbcType=VARCHAR},
-      </if>
-      <if test="record.notice != null">
-        notice = #{record.notice,jdbcType=VARCHAR},
-      </if>
       <if test="record.type != null">
         type = #{record.type,jdbcType=VARCHAR},
       </if>
       <if test="record.credit != null">
         credit = #{record.credit,jdbcType=INTEGER},
       </if>
-      <if test="record.createtime != null">
-        createtime = #{record.createtime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="record.path != null">
-        path = #{record.path,jdbcType=VARCHAR},
-      </if>
       <if test="record.creditHours != null">
         credit_hours = #{record.creditHours,jdbcType=INTEGER},
       </if>
-      <if test="record.isexam != null">
-        isexam = #{record.isexam,jdbcType=INTEGER},
+      <if test="record.term != null">
+        term = #{record.term,jdbcType=CHAR},
+      </if>
+      <if test="record.planNum != null">
+        plan_num = #{record.planNum,jdbcType=INTEGER},
+      </if>
+      <if test="record.realityNum != null">
+        reality_num = #{record.realityNum,jdbcType=INTEGER},
+      </if>
+      <if test="record.createtime != null">
+        createtime = #{record.createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.notice != null">
+        notice = #{record.notice,jdbcType=VARCHAR},
+      </if>
+      <if test="record.simpleTime != null">
+        simple_time = #{record.simpleTime,jdbcType=VARCHAR},
       </if>
     </set>
     <if test="_parameter != null">
@@ -265,16 +255,15 @@
     set id = #{record.id,jdbcType=BIGINT},
       classname = #{record.classname,jdbcType=VARCHAR},
       teacherid = #{record.teacherid,jdbcType=BIGINT},
-      starttime = #{record.starttime,jdbcType=VARCHAR},
-      code = #{record.code,jdbcType=VARCHAR},
-      place = #{record.place,jdbcType=VARCHAR},
-      notice = #{record.notice,jdbcType=VARCHAR},
       type = #{record.type,jdbcType=VARCHAR},
       credit = #{record.credit,jdbcType=INTEGER},
-      createtime = #{record.createtime,jdbcType=TIMESTAMP},
-      path = #{record.path,jdbcType=VARCHAR},
       credit_hours = #{record.creditHours,jdbcType=INTEGER},
-      isexam = #{record.isexam,jdbcType=INTEGER}
+      term = #{record.term,jdbcType=CHAR},
+      plan_num = #{record.planNum,jdbcType=INTEGER},
+      reality_num = #{record.realityNum,jdbcType=INTEGER},
+      createtime = #{record.createtime,jdbcType=TIMESTAMP},
+      notice = #{record.notice,jdbcType=VARCHAR},
+      simple_time = #{record.simpleTime,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -288,35 +277,32 @@
       <if test="teacherid != null">
         teacherid = #{teacherid,jdbcType=BIGINT},
       </if>
-      <if test="starttime != null">
-        starttime = #{starttime,jdbcType=VARCHAR},
-      </if>
-      <if test="code != null">
-        code = #{code,jdbcType=VARCHAR},
-      </if>
-      <if test="place != null">
-        place = #{place,jdbcType=VARCHAR},
-      </if>
-      <if test="notice != null">
-        notice = #{notice,jdbcType=VARCHAR},
-      </if>
       <if test="type != null">
         type = #{type,jdbcType=VARCHAR},
       </if>
       <if test="credit != null">
         credit = #{credit,jdbcType=INTEGER},
       </if>
-      <if test="createtime != null">
-        createtime = #{createtime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="path != null">
-        path = #{path,jdbcType=VARCHAR},
-      </if>
       <if test="creditHours != null">
         credit_hours = #{creditHours,jdbcType=INTEGER},
       </if>
-      <if test="isexam != null">
-        isexam = #{isexam,jdbcType=INTEGER},
+      <if test="term != null">
+        term = #{term,jdbcType=CHAR},
+      </if>
+      <if test="planNum != null">
+        plan_num = #{planNum,jdbcType=INTEGER},
+      </if>
+      <if test="realityNum != null">
+        reality_num = #{realityNum,jdbcType=INTEGER},
+      </if>
+      <if test="createtime != null">
+        createtime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="notice != null">
+        notice = #{notice,jdbcType=VARCHAR},
+      </if>
+      <if test="simpleTime != null">
+        simple_time = #{simpleTime,jdbcType=VARCHAR},
       </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
@@ -325,16 +311,15 @@
     update class
     set classname = #{classname,jdbcType=VARCHAR},
       teacherid = #{teacherid,jdbcType=BIGINT},
-      starttime = #{starttime,jdbcType=VARCHAR},
-      code = #{code,jdbcType=VARCHAR},
-      place = #{place,jdbcType=VARCHAR},
-      notice = #{notice,jdbcType=VARCHAR},
       type = #{type,jdbcType=VARCHAR},
       credit = #{credit,jdbcType=INTEGER},
-      createtime = #{createtime,jdbcType=TIMESTAMP},
-      path = #{path,jdbcType=VARCHAR},
       credit_hours = #{creditHours,jdbcType=INTEGER},
-      isexam = #{isexam,jdbcType=INTEGER}
+      term = #{term,jdbcType=CHAR},
+      plan_num = #{planNum,jdbcType=INTEGER},
+      reality_num = #{realityNum,jdbcType=INTEGER},
+      createtime = #{createtime,jdbcType=TIMESTAMP},
+      notice = #{notice,jdbcType=VARCHAR},
+      simple_time = #{simpleTime,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

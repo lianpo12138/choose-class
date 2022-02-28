@@ -14,10 +14,8 @@ import rainclassv3.exception.FileExceptionCode;
 import rainclassv3.mapper.ClassMapper;
 import rainclassv3.mapper.ScoreMapper;
 import rainclassv3.mapper.TeacherMapper;
+import rainclassv3.pojo.*;
 import rainclassv3.pojo.Class;
-import rainclassv3.pojo.ClassExample;
-import rainclassv3.pojo.ScoreExample;
-import rainclassv3.pojo.Teacher;
 import rainclassv3.req.ClassQueryReq;
 import rainclassv3.req.ClassSaveReq;
 import rainclassv3.resp.ClassQueryResp;
@@ -30,6 +28,7 @@ import javax.annotation.Resource;
 import javax.validation.Valid;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -70,6 +69,9 @@ public class ClassServiceImpl implements ClassService {
 
     /**
      * 分页、模糊查询
+     * 学生：（只能是这学期，选修的）能选的  上过以及该上的 ---中间表 课程，学生  在我看来就是先从中年表里取出课程id集合，然后根据id查询
+     * 老师：自己开设的课程（历史）：直接根据teacher_id 查对应的数据
+     * 管理员：什么课程都能看
      * @param req
      * @return
      */
@@ -77,7 +79,22 @@ public class ClassServiceImpl implements ClassService {
     @Override
     public PageResp list(ClassQueryReq req) {
         ClassExample classExample = new ClassExample();
-        classExample.createCriteria().andClassnameLike("%"+req.getClassname()+"%");
+        ClassExample.Criteria criteria = classExample.createCriteria();
+        criteria.andClassnameLike("%"+req.getClassname()+"%");
+        if (req.getType() != null) {
+            criteria.andTypeEqualTo(req.getType());
+        }
+        if (req.getTeachername() != null) {
+            TeacherExample teacherExample = new TeacherExample();
+            teacherExample.or().andRealnameLike("%"+req.getTeachername()+"%");
+            List<Teacher> teachers = teacherMapper.selectByExample(teacherExample);
+            List ids = new ArrayList<>();
+            teachers.forEach(item->{
+               ids.add(item.getId());
+            });
+            criteria.andTeacheridIn(ids);
+        }
+
         PageHelper.startPage(req.getPageNum(),req.getPageSize());
         List<Class> classes = classMapper.selectByExample(classExample);
 
