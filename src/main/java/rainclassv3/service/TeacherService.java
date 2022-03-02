@@ -1,11 +1,10 @@
 package rainclassv3.service;
 
 import rainclassv3.pojo.Teacher;
-import rainclassv3.req.TeacherChangeScoreReq;
-import rainclassv3.req.TeacherMyClassQueryReq;
-import rainclassv3.req.TeacherMyStudentReq;
+import rainclassv3.req.*;
 import rainclassv3.resp.PageResp;
 import rainclassv3.resp.TeacherMyStudentResp;
+import rainclassv3.resp.TeacherQueryResp;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -18,7 +17,7 @@ public interface TeacherService {
      * @param req
      * @return
      */
-    PageResp list(TeacherMyClassQueryReq req);
+    PageResp listClass(TeacherMyClassQueryReq req);
 
 
     /**
@@ -37,8 +36,15 @@ public interface TeacherService {
 
 
     /**
-     * 获取所有教师信息
+     * 根据查询条件获取教师信息
      * @return
      */
-    List<Teacher> getAll();
+    PageResp<TeacherQueryResp> list(TeacherQureyReq req);
+
+    /* 查询所有职称*/
+    List listAcade();
+
+    /* 添加老师*/
+    Teacher addTeacher(TeacherReq req);
+
 }

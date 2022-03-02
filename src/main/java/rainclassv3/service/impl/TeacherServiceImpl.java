@@ -11,18 +11,17 @@ import rainclassv3.mapper.StudentMapper;
 import rainclassv3.mapper.TeacherMapper;
 import rainclassv3.pojo.*;
 import rainclassv3.pojo.Class;
-import rainclassv3.req.TeacherChangeScoreReq;
-import rainclassv3.req.TeacherMyClassQueryReq;
-import rainclassv3.req.TeacherMyStudentReq;
+import rainclassv3.req.*;
 import rainclassv3.resp.ClassQueryResp;
 import rainclassv3.resp.PageResp;
 import rainclassv3.resp.TeacherMyStudentResp;
+import rainclassv3.resp.TeacherQueryResp;
 import rainclassv3.service.TeacherService;
 import rainclassv3.util.CopyUtil;
+import sun.security.provider.MD5;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @ClassName TeacherServiceImpl
@@ -54,7 +53,7 @@ public class TeacherServiceImpl implements TeacherService {
      * @return
      */
     @Override
-    public PageResp list(TeacherMyClassQueryReq req) {
+    public PageResp listClass(TeacherMyClassQueryReq req) {
         long teacherId = Long.parseLong(req.getTeacherid());
 
         /**
@@ -150,14 +149,52 @@ public class TeacherServiceImpl implements TeacherService {
         scoreMapper.updateByPrimaryKeySelective(dbScore);
     }
 
-    /**
-     * 获取所有教师信息
-     *
-     * @return
-     */
     @Override
-    public List<Teacher> getAll() {
-        List<Teacher> teachers = teacherMapper.selectByExample(null);
-        return teachers;
+    public PageResp<TeacherQueryResp> list(TeacherQureyReq req) {
+        TeacherExample teacherExample = new TeacherExample();
+        TeacherExample.Criteria criteria = teacherExample.createCriteria();
+        if (!req.getLoginName().isEmpty()) {
+            criteria.andLoginnameLike("%"+req.getLoginName()+"%");
+        }if (!req.getName().isEmpty()) {
+            criteria.andRealnameLike("%"+req.getName()+"%");
+        }if (!req.getAcedemicTitle().isEmpty()) {
+            criteria.andAcademicTitleEqualTo(req.getAcedemicTitle());
+
+        }
+
+        PageHelper.startPage(req.getPageNum(), req.getPageSize());
+        List<Teacher> teachers = teacherMapper.selectByExample(teacherExample);
+        PageInfo pageInfo = new PageInfo(teachers);
+        List<TeacherQueryResp> resps = CopyUtil.copyList(teachers, TeacherQueryResp.class);
+        PageResp<TeacherQueryResp> resp = new PageResp<>();
+        resp.setList(resps);
+        resp.setTotal((int) pageInfo.getTotal());
+        resp.setPageNum(pageInfo.getPageNum());
+        resp.setPageSize(pageInfo.getPageSize());
+        return resp;
     }
+
+    @Override
+    public List listAcade() {
+        List<Teacher> teachers = teacherMapper.selectByExample(null);
+        Set<Object> set = new HashSet<>();
+        teachers.forEach(it->{
+            set.add(it.getAcademicTitle());
+        });
+        List resp = new ArrayList<>(set);
+        return resp;
+    }
+
+    @Override
+    public Teacher addTeacher(TeacherReq req) {
+        Teacher copy = CopyUtil.copy(req, Teacher.class);
+        copy.setCreatetime(new Date());
+        teacherMapper.insertSelective(copy);
+        copy.setLoginname(copy.getId().toString());
+        copy.setPassword(copy.getLoginname());
+        teacherMapper.updateByPrimaryKeySelective(copy);
+        return copy;
+    }
+
+
 }

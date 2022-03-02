@@ -116,7 +116,7 @@
       #{logintime,jdbcType=TIMESTAMP}, #{academicTitle,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="rainclassv3.pojo.Teacher">
+  <insert id="insertSelective" parameterType="rainclassv3.pojo.Teacher" keyProperty="id" useGeneratedKeys="true">
     insert into teacher
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
