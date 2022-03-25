@@ -54,4 +54,10 @@ public interface StudentService {
     */
     List<StudentResp> getAll();
 
+    /*
+    *  条件查询学生信息
+    *
+    */
+    PageResp<Student> listStudents(StudentQueryReq req);
+
 }

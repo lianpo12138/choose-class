@@ -1,5 +1,7 @@
 package rainclassv3.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -10,10 +12,7 @@ import rainclassv3.mapper.StudentMapper;
 import rainclassv3.mapper.TeacherMapper;
 import rainclassv3.pojo.*;
 import rainclassv3.pojo.Class;
-import rainclassv3.req.StudentClassChangeReq;
-import rainclassv3.req.StudentIsChosenReq;
-import rainclassv3.req.StudentMyClassQueryReq;
-import rainclassv3.req.StudentMyScoreReq;
+import rainclassv3.req.*;
 import rainclassv3.resp.ClassQueryResp;
 import rainclassv3.resp.PageResp;
 import rainclassv3.resp.StudentMyScoreResp;
@@ -218,5 +217,26 @@ public class StudentServiceImpl implements StudentService {
             studentResps.add(studentResp);
         }
         return studentResps;
+    }
+
+    @Override
+    public PageResp<Student> listStudents(StudentQueryReq req) {
+        StudentExample example = new StudentExample();
+        StudentExample.Criteria criteria = example.createCriteria();
+        if (!req.getLoginname().isEmpty()) {
+            criteria.andLoginnameLike("%" + req.getLoginname() + "%");
+        }
+        if (!req.getName().isEmpty()) {
+            criteria.andRealnameLike("%" + req.getName() + "%");
+        }
+        PageHelper.startPage(req.getPageNum(), req.getPageSize());
+        List<Student> students = studentMapper.selectByExample(example);
+        PageInfo<Student> info = new PageInfo<>(students);
+        PageResp<Student> resp = new PageResp<>();
+        resp.setTotal((int)info.getTotal());
+        resp.setPageNum(info.getPageNum());
+        resp.setPageSize(info.getPageSize());
+        resp.setList(info.getList());
+        return resp;
     }
 }

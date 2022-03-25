@@ -1,24 +1,32 @@
 package rainclassv3.pojo;
 
+import cn.afterturn.easypoi.excel.annotation.Excel;
+
 import java.util.Date;
 
 public class Teacher {
+
+    @Excel(name = "工号")
     private Long id;
 
     private String loginname;
 
+    @Excel(name = "教师姓名")
     private String realname;
 
     private String password;
 
+    @Excel(name = "邮箱")
     private String email;
 
     private Date createtime;
 
     private Date logintime;
 
+    @Excel(name = "职称")
     private String academicTitle;
 
+    @Excel(name = "电话")
     private String phone;
 
     public Teacher(Long id, String loginname, String realname, String password, String email, Date createtime, Date logintime, String academicTitle, String phone) {

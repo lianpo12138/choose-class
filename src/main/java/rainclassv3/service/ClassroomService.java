@@ -17,4 +17,6 @@ public interface ClassroomService {
     /* 查询教学楼集合*/
     List listBuilding();
 
+    /* 添加*/
+
 }

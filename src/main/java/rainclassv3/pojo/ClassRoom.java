@@ -1,20 +1,27 @@
 package rainclassv3.pojo;
 
+import cn.afterturn.easypoi.excel.annotation.Excel;
+
 public class ClassRoom {
     private Integer id;
 
+    @Excel(name = "教室编号")
     private String classroomId;
 
+    @Excel(name = "教室名称")
     private String name;
 
+    @Excel(name = "所在校区")
     private String origin;
 
+    @Excel(name = "教室功能")
     private String function;
 
+    @Excel(name = "所在教学楼")
     private String building;
 
+    @Excel(name = "容纳人数")
     private Integer capacity;
-
     public ClassRoom(Integer id, String classroomId, String name, String origin, String function, String building, Integer capacity) {
         this.id = id;
         this.classroomId = classroomId;

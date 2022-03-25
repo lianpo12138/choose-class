@@ -2,9 +2,8 @@ package rainclassv3.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import rainclassv3.pojo.Student;
 import rainclassv3.req.*;
 import rainclassv3.resp.CommonResp;
 import rainclassv3.resp.PageResp;
@@ -12,6 +11,7 @@ import rainclassv3.resp.StudentResp;
 import rainclassv3.service.StudentService;
 
 import javax.annotation.Resource;
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -39,16 +39,25 @@ public class StudentController {
 
 
     /**
-     * 获取学生可选的课程列表
-     * 排除已经被选中的课程
+     * 获取学生课程信息
      * @param req
      * @return
      */
-    @GetMapping("/list")
+    @GetMapping("/listClasses")
     public CommonResp getStudentClassList(StudentClassQueryReq req) {
-
-
         CommonResp commonResp = new CommonResp();
+        return commonResp;
+    }
+    /**
+     * 获取学生集合信息
+     * @param req
+     * @return
+     */
+    @PostMapping("/listStudents")
+    public CommonResp getStudents(@Valid @RequestBody StudentQueryReq req) {
+        PageResp<Student> studentPageResp = studentService.listStudents(req);
+        CommonResp commonResp = new CommonResp();
+        commonResp.setContent(studentPageResp);
         return commonResp;
     }
 

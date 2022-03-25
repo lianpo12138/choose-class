@@ -1,18 +1,19 @@
 package rainclassv3.controller;
 
+import com.github.pagehelper.PageHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 import rainclassv3.pojo.Teacher;
-import rainclassv3.req.TeacherChangeScoreReq;
-import rainclassv3.req.TeacherMyClassQueryReq;
-import rainclassv3.req.TeacherMyStudentReq;
+import rainclassv3.req.*;
 import rainclassv3.resp.CommonResp;
 import rainclassv3.resp.PageResp;
 import rainclassv3.resp.TeacherMyStudentResp;
+import rainclassv3.resp.TeacherQueryResp;
 import rainclassv3.service.TeacherService;
 
 import javax.annotation.Resource;
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -38,7 +39,7 @@ public class TeacherController {
      */
     @GetMapping("/myClass")
     public CommonResp myClass(TeacherMyClassQueryReq req) {
-        PageResp list = teacherService.list(req);
+        PageResp list = teacherService.listClass(req);
         CommonResp commonResp = new CommonResp();
         commonResp.setContent(list);
         return commonResp;
@@ -78,15 +79,30 @@ public class TeacherController {
 
 
     /**
-     * 获取全部教师信息
+     * 根据条件查询教师信息
+     *
      * @return
      */
-    @GetMapping("/getAll")
-    public CommonResp getAll() {
-        List<Teacher> all = teacherService.getAll();
-        CommonResp commonResp = new CommonResp();
-        commonResp.setContent(all);
-        return commonResp;
+    @GetMapping("/list")
+    public CommonResp list(@Valid TeacherQureyReq req) {
+        CommonResp<Object> resp = new CommonResp<>();
+        PageResp<TeacherQueryResp> list = teacherService.list(req);
+        resp.setContent(list);
+        return resp;
+    }
+
+    @GetMapping("/listacade")
+    public List listAcade(){
+        List list = teacherService.listAcade();
+        return list;
+    }
+
+    @PostMapping("/add")
+    public CommonResp addTeacher(@Valid @RequestBody TeacherReq req) {
+        CommonResp resp = new CommonResp<>();
+        Teacher teacher = teacherService.addTeacher(req);
+        resp.setContent(teacher);
+        return resp;
     }
 
 }

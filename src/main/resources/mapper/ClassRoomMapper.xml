@@ -88,7 +88,7 @@
     </if>
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
+    select
     <include refid="Base_Column_List" />
     from classroom
     where id = #{id,jdbcType=INTEGER}
@@ -103,12 +103,12 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="rainclassv3.pojo.ClassRoom">
-    insert into classroom (id, classroom_id, name, 
-      origin, function, building, 
+  <insert id="insert" parameterType="rainclassv3.pojo.ClassRoom" keyProperty="id" useGeneratedKeys="true">
+    insert into classroom (id, classroom_id, name,
+      origin, function, building,
       capacity)
-    values (#{id,jdbcType=INTEGER}, #{classroomId,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
-      #{origin,jdbcType=VARCHAR}, #{function,jdbcType=VARCHAR}, #{building,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=INTEGER}, #{classroomId,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR},
+      #{origin,jdbcType=VARCHAR}, #{function,jdbcType=VARCHAR}, #{building,jdbcType=VARCHAR},
       #{capacity,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="rainclassv3.pojo.ClassRoom">

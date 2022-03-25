@@ -7,21 +7,24 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import rainclassv3.mapper.ClassRoomMapper;
 import rainclassv3.mapper.PeriodMapper;
-import rainclassv3.pojo.Period;
-import rainclassv3.pojo.PeriodExample;
-import rainclassv3.req.PasswordChangeReq;
-import rainclassv3.req.PasswordCheckReq;
-import rainclassv3.req.UserLoginReq;
-import rainclassv3.req.UserRegisterReq;
+import rainclassv3.mapper.StudentMapper;
+import rainclassv3.mapper.TeacherMapper;
+import rainclassv3.pojo.*;
+import rainclassv3.req.*;
 import rainclassv3.resp.AdminLoginResp;
 import rainclassv3.resp.CommonResp;
 import rainclassv3.resp.UserLoginResp;
 import rainclassv3.service.UserService;
+import rainclassv3.util.ExcelUtil;
 import rainclassv3.util.SnowFlake;
+import sun.rmi.runtime.Log;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
@@ -51,6 +54,15 @@ public class UserController {
 
     @Resource
     private PeriodMapper periodMapper;
+
+    @Resource
+    private ClassRoomMapper classRoomMapper;
+
+    @Resource
+    private StudentMapper studentMapper;
+
+    @Resource
+    private TeacherMapper teacherMapper;
 
     /**
      * 登录接口
@@ -162,7 +174,7 @@ public class UserController {
         if (period.getId() == null) {
             periodMapper.insertSelective(period);
             Integer id = period.getId();
-            LOG.info("自增id为"+id);
+            LOG.info("自增id为" + id);
         } else {
             periodMapper.updateByPrimaryKeySelective(period);
         }
@@ -175,6 +187,70 @@ public class UserController {
         return id;
     }
 
+    /* 批量导入教室*/
+    @PostMapping("/importClassRoom")
+    public CommonResp importExcel(@RequestBody MultipartFile file) throws IOException {
+        List<ClassRoom> users = ExcelUtil.importExcel(file, ClassRoom.class);
+        CommonResp resp = new CommonResp();
+        users.forEach(i -> {
+            classRoomMapper.insert(i);
+        });
+
+        resp.setContent(users);
+        resp.setMessage("导入" + users.size() + "条数据！");
+        return resp;
+    }
+
+    @PostMapping("/importStudents")
+    /* 批量导入学生*/
+    public CommonResp importStudents(MultipartFile file) {
+        int num;
+        try {
+            List<Student> students = ExcelUtil.importExcel(file, Student.class);
+
+            for (int i = 0; i < students.size(); i++) {
+                if (studentMapper.selectByPrimaryKey(students.get(i).getId()) != null) {
+                    return new CommonResp(false, "第"+(i+3)+"行的学号已存在数据库！", null);
+                }
+            }
+            students.forEach(i->{
+                i.setPassword(i.getId().toString());
+                i.setLoginname(i.getId().toString());
+                i.setCreatetime(new Date());
+                studentMapper.insertSelective(i);
+            });
+            num = students.size();
+            return new CommonResp(true,"添加了"+num+"条数据！",null);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @PostMapping("/importTeachers")
+    /* 批量导入学生*/
+    public CommonResp importTeachers(MultipartFile file) {
+
+        try {
+            List<Teacher> teachers = ExcelUtil.importExcel(file, Teacher.class);
+
+            for (int i = 0; i < teachers.size(); i++) {
+                if (teacherMapper.selectByPrimaryKey(teachers.get(i).getId()) != null) {
+                    return new CommonResp(false, "第"+(i+3)+"行的工号已存在数据库！", null);
+                }
+            }
+            teachers.forEach(i->{
+                i.setPassword(i.getId().toString());
+                i.setLoginname(i.getPassword());
+                i.setCreatetime(new Date());
+                teacherMapper.insertSelective(i);
+            });
+            return new CommonResp(true,"添加了"+teachers.size()+"条数据！",null);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
 
 }
