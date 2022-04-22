@@ -54,12 +54,12 @@ public class ClassServiceImpl implements ClassService {
     @Resource
     private ScoreMapper scoreMapper;
 
-    private static final Logger LOG= LoggerFactory.getLogger(ClassServiceImpl.class);
+    private static final Logger LOG = LoggerFactory.getLogger(ClassServiceImpl.class);
 
     /**
      * disPic:
-     *   file-path: /Users/faro_z/Pictures/cover
-     *   web-path: http://127.0.0.1:9000/disPic/
+     * file-path: /Users/faro_z/Pictures/cover
+     * web-path: http://127.0.0.1:9000/disPic/
      */
     @Value("${disPic.file-path}")
     private String FILE_PATH;
@@ -72,30 +72,31 @@ public class ClassServiceImpl implements ClassService {
      * 学生：（只能是这学期，选修的）能选的  上过以及该上的 ---中间表 课程，学生  在我看来就是先从中年表里取出课程id集合，然后根据id查询
      * 老师：自己开设的课程（历史）：直接根据teacher_id 查对应的数据
      * 管理员：什么课程都能看
+     *
      * @param req
      * @return
      */
-    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     @Override
     public PageResp list(ClassQueryReq req) {
         ClassExample classExample = new ClassExample();
         ClassExample.Criteria criteria = classExample.createCriteria();
-        criteria.andClassnameLike("%"+req.getClassname()+"%");
+        criteria.andClassnameLike("%" + req.getClassname() + "%");
         if (req.getType() != null) {
             criteria.andTypeEqualTo(req.getType());
         }
         if (req.getTeachername() != null) {
             TeacherExample teacherExample = new TeacherExample();
-            teacherExample.or().andRealnameLike("%"+req.getTeachername()+"%");
+            teacherExample.or().andRealnameLike("%" + req.getTeachername() + "%");
             List<Teacher> teachers = teacherMapper.selectByExample(teacherExample);
             List ids = new ArrayList<>();
-            teachers.forEach(item->{
-               ids.add(item.getId());
+            teachers.forEach(item -> {
+                ids.add(item.getId());
             });
             criteria.andTeacheridIn(ids);
         }
 
-        PageHelper.startPage(req.getPageNum(),req.getPageSize());
+        PageHelper.startPage(req.getPageNum(), req.getPageSize());
         List<Class> classes = classMapper.selectByExample(classExample);
 
         PageInfo<Class> pageInfo = new PageInfo<>(classes);
@@ -129,18 +130,18 @@ public class ClassServiceImpl implements ClassService {
 
     /**
      * 课程更新/存储
+     *
      * @param req
      * @return
      */
     @Override
     public int save(ClassSaveReq req) {
         Long id = req.getId();
-        int count=0;
-        if (id==null) {
+        int count = 0;
+        if (id == null) {
             //新增
             req.setId(snowFlake.nextId());
             Class copy = CopyUtil.copy(req, Class.class);
-
             copy.setCreatetime(new Date());
             count = classMapper.insert(copy);
         } else {
@@ -154,10 +155,11 @@ public class ClassServiceImpl implements ClassService {
 
     /**
      * 根据 id 查询课程信息
+     *
      * @param id
      * @return
      */
-    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     @Override
     public ClassQueryResp selectById(Long id) {
         /**
@@ -184,13 +186,13 @@ public class ClassServiceImpl implements ClassService {
     public PicUploadResp upload(MultipartFile file) {
         String originalFilename = file.getOriginalFilename();
 
-        LOG.info("获取的文件名为:{}",originalFilename);
+        LOG.info("获取的文件名为:{}", originalFilename);
         /**
          * 获取文件后缀
          */
         String hz = originalFilename.substring(originalFilename.lastIndexOf("."));
 
-        LOG.info("获取的文件后缀为:{}",hz);
+        LOG.info("获取的文件后缀为:{}", hz);
 
 
         //判断图片后缀是否合法
@@ -199,7 +201,7 @@ public class ClassServiceImpl implements ClassService {
             throw new FileException(FileExceptionCode.FILE_TYPE_ERROR);
         }
 
-        String newFileName = String.valueOf(snowFlake.nextId())+hz;
+        String newFileName = String.valueOf(snowFlake.nextId()) + hz;
         StringBuilder sb = new StringBuilder();
         sb.append(FILE_PATH)
                 .append("/")
@@ -224,7 +226,7 @@ public class ClassServiceImpl implements ClassService {
          */
         PicUploadResp picUploadResp = new PicUploadResp();
         picUploadResp.setPath(newFileName);
-        picUploadResp.setShowPath(WEB_PATH+newFileName);
+        picUploadResp.setShowPath(WEB_PATH + newFileName);
 
         return picUploadResp;
     }
@@ -236,7 +238,7 @@ public class ClassServiceImpl implements ClassService {
      *
      * @param id
      */
-    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     @Override
     public void deleteById(Long id) {
         /**

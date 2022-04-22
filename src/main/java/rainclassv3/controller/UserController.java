@@ -228,7 +228,6 @@ public class UserController {
     }
 
     @PostMapping("/importTeachers")
-    /* 批量导入学生*/
     public CommonResp importTeachers(MultipartFile file) {
 
         try {

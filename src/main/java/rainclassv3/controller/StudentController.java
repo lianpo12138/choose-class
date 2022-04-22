@@ -83,10 +83,10 @@ public class StudentController {
      * @return
      */
     @GetMapping("/myClass")
-    public CommonResp getMyClass(StudentMyClassQueryReq req) {
-        PageResp pageResp = studentService.list(req);
+    public CommonResp getMyClass(String studentId) {
+        List list = studentService.list(studentId);
         CommonResp commonResp = new CommonResp();
-        commonResp.setContent(pageResp);
+        commonResp.setContent(list);
         return commonResp;
     }
 
@@ -98,8 +98,15 @@ public class StudentController {
      */
     @RequestMapping("/selectClass")
     public CommonResp selectClass(StudentClassChangeReq req) {
-        studentService.selectClass(req);
+        int i = studentService.selectClass(req);
         CommonResp commonResp = new CommonResp();
+        if (i == 0) {
+            commonResp.setMessage("该学生已选择该门课程！");
+            commonResp.setSuccess(false);
+        } else {
+            commonResp.setMessage("选课成功！");
+        }
+
         return commonResp;
     }
 

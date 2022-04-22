@@ -23,10 +23,10 @@ public interface StudentService {
 
     /**
      * 获取学生已经选择的课程的信息
-     * @param req
+     * @param id
      * @return
      */
-    PageResp list(StudentMyClassQueryReq req);
+    List list(String id);
 
 
     /**
@@ -39,7 +39,7 @@ public interface StudentService {
      * 学生选课
      * @param req
      */
-    void selectClass(StudentClassChangeReq req);
+    int selectClass(StudentClassChangeReq req);
 
     /**
      * 获取当前学生的成绩

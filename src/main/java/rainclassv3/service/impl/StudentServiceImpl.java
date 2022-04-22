@@ -3,13 +3,11 @@ package rainclassv3.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.BeanUtils;
+import org.springframework.data.relational.core.sql.In;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import rainclassv3.mapper.ClassMapper;
-import rainclassv3.mapper.ScoreMapper;
-import rainclassv3.mapper.StudentMapper;
-import rainclassv3.mapper.TeacherMapper;
+import rainclassv3.mapper.*;
 import rainclassv3.pojo.*;
 import rainclassv3.pojo.Class;
 import rainclassv3.req.*;
@@ -49,6 +47,9 @@ public class StudentServiceImpl implements StudentService {
     private TeacherMapper teacherMapper;
 
     @Resource
+    private ClassStudentMapper classStudentMapper;
+
+    @Resource
     private SnowFlake snowFlake;
 
     /**
@@ -81,24 +82,19 @@ public class StudentServiceImpl implements StudentService {
     /**
      * 获取学生已经选择的课程的信息
      *
-     * @param req
+     * @param studentId
      * @return
      */
     @Override
-    public PageResp list(StudentMyClassQueryReq req) {
-        long studentId = Long.parseLong(req.getStudentid());
-        ScoreExample scoreExample = new ScoreExample();
-        scoreExample.createCriteria().andStudentidEqualTo(studentId);
-        List<Score> scores = scoreMapper.selectByExample(scoreExample);
-
+    public List list(String studentId) {
+        ClassStudentExample classStudentExample = new ClassStudentExample();
+        classStudentExample.createCriteria().andStudentEqualTo(Integer.parseInt(studentId));
+        List<ClassStudent> classStudents = classStudentMapper.selectByExample(classStudentExample);
         List<Class> classes = new ArrayList<>();
-        /**
-         * 查询出当前学生选择的所有课程
-         */
-        for (Score score : scores) {
-            Class myClass = classMapper.selectByPrimaryKey(score.getClassid());
-            classes.add(myClass);
-        }
+        classStudents.forEach(i->{
+            Class aClass = classMapper.selectByPrimaryKey(i.getClassId().longValue());
+            classes.add(aClass);
+        });
 
         /**
          * 学生已经选择的课程列表中，就不设置模糊查询功能了
@@ -113,19 +109,9 @@ public class StudentServiceImpl implements StudentService {
         /**
          * 查找课程的教师信息
          */
-        List<ClassQueryResp> classQueryResps = CopyUtil.copyList(classes, ClassQueryResp.class);
-        for (ClassQueryResp classQueryResp : classQueryResps) {
-            Teacher teacher = teacherMapper.selectByPrimaryKey(classQueryResp.getTeacherid());
-            classQueryResp.setTeacher(teacher);
-        }
 
-        PageResp pageResp = new PageResp();
-        pageResp.setPageNum(req.getPageNum());
-        pageResp.setPageSize(req.getPageSize());
-        pageResp.setTotal(classQueryResps.size());
-        pageResp.setList(classQueryResps);
 
-        return pageResp;
+        return classes;
     }
 
     /**
@@ -150,24 +136,32 @@ public class StudentServiceImpl implements StudentService {
      * @param req
      */
     @Override
-    public void selectClass(StudentClassChangeReq req) {
+    public int selectClass(StudentClassChangeReq req) {
+        ClassStudentExample classStudentExample = new ClassStudentExample();
+        ClassStudentExample.Criteria criteria = classStudentExample.createCriteria().andClassIdEqualTo(Integer.parseInt(req.getClassid()));
+        criteria.andStudentEqualTo(Integer.parseInt(req.getStudentid()));
+        List<ClassStudent> classStudents = classStudentMapper.selectByExample(classStudentExample);
+        if (classStudents.size() != 0) {
+            return 0;
+        }
+        Class aClass = classMapper.selectByPrimaryKey(Long.parseLong(req.getClassid()));
+        aClass.setRealityNum(aClass.getRealityNum() + 1);
+        classMapper.updateByPrimaryKeySelective(aClass);
+
+
         long classId = Long.parseLong(req.getClassid());
         long studentId = Long.parseLong(req.getStudentid());
 
         /**
          * 需要在 score 表中，添加课程与学生的信息
          */
-        Score score = new Score();
-        score.setClassid(classId);
-        score.setStudentid(studentId);
+        ClassStudent score = new ClassStudent();
+        score.setClassId(Integer.parseInt(req.getClassid()));
+        score.setStudent(Integer.parseInt(req.getStudentid()));
 
-        /**
-         * 为新的数据，添加主键
-         */
-        long id = snowFlake.nextId();
-        score.setId(id);
 
-        scoreMapper.insert(score);
+        classStudentMapper.insertSelective(score);
+        return 1;
     }
 
 
