@@ -104,7 +104,7 @@ public class StudentController {
             commonResp.setMessage("该学生已选择该门课程！");
             commonResp.setSuccess(false);
         } else {
-            commonResp.setMessage("选课成功！");
+            commonResp.setMessage("提交成功，请到菜单栏中【我的课程】查询页面查看选课结果!选课结果以此为准!！");
         }
 
         return commonResp;

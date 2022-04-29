@@ -49,6 +49,7 @@ public class UserServiceImpl implements UserService {
 
     @Resource
     private SnowFlake snowFlake;
+    private UserLoginReq req;
 
 
     /**
@@ -60,6 +61,7 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public UserLoginResp login(UserLoginReq req) {
+        this.req = req;
         String role = req.getRole();
         LOG.info("登录的角色为:{}",role);
         UserLoginResp loginResp = null;

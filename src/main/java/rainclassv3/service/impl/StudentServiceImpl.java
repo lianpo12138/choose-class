@@ -3,6 +3,7 @@ package rainclassv3.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.BeanUtils;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.relational.core.sql.In;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -51,6 +52,9 @@ public class StudentServiceImpl implements StudentService {
 
     @Resource
     private SnowFlake snowFlake;
+
+    @Resource
+    private RedisTemplate redisTemplate;
 
     /**
      * 查询学生是否选择该课程
@@ -137,23 +141,25 @@ public class StudentServiceImpl implements StudentService {
      */
     @Override
     public int selectClass(StudentClassChangeReq req) {
-        ClassStudentExample classStudentExample = new ClassStudentExample();
-        ClassStudentExample.Criteria criteria = classStudentExample.createCriteria().andClassIdEqualTo(Integer.parseInt(req.getClassid()));
-        criteria.andStudentEqualTo(Integer.parseInt(req.getStudentid()));
-        List<ClassStudent> classStudents = classStudentMapper.selectByExample(classStudentExample);
-        if (classStudents.size() != 0) {
+
+        //ClassStudentExample classStudentExample = new ClassStudentExample();
+        //ClassStudentExample.Criteria criteria = classStudentExample.createCriteria().andClassIdEqualTo(Integer.parseInt(req.getClassid()));
+        //criteria.andStudentEqualTo(Integer.parseInt(req.getStudentid()));
+        //List<ClassStudent> classStudents = classStudentMapper.selectByExample(classStudentExample);
+        // 查询课程剩余可选人数
+        Object o = redisTemplate.opsForValue().get("classId" + req.getClassid());
+        // 如果不为空，则将课程表中的已选人数加一
+        if ((int)o == 0) {
             return 0;
         }
+        // 若无余量直接返回
         Class aClass = classMapper.selectByPrimaryKey(Long.parseLong(req.getClassid()));
         aClass.setRealityNum(aClass.getRealityNum() + 1);
         classMapper.updateByPrimaryKeySelective(aClass);
-
-
         long classId = Long.parseLong(req.getClassid());
         long studentId = Long.parseLong(req.getStudentid());
-
         /**
-         * 需要在 score 表中，添加课程与学生的信息
+         * 需要在学生课程中间表中，添加课程与学生的信息
          */
         ClassStudent score = new ClassStudent();
         score.setClassId(Integer.parseInt(req.getClassid()));

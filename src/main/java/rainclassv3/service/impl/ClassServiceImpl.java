@@ -1,10 +1,12 @@
 package rainclassv3.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -31,6 +33,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @ClassName ClassServiceImpl
@@ -53,6 +56,9 @@ public class ClassServiceImpl implements ClassService {
 
     @Resource
     private ScoreMapper scoreMapper;
+
+    @Resource
+    private RedisTemplate redisTemplate;
 
     private static final Logger LOG = LoggerFactory.getLogger(ClassServiceImpl.class);
 
@@ -111,6 +117,14 @@ public class ClassServiceImpl implements ClassService {
         pageResp.setPageSize(pageInfo.getPageSize());
         pageResp.setTotal((int) pageInfo.getTotal());
         pageResp.setList(classQueryResps);
+
+        // 优化:查询课程时将，如果redis中没有该课程键值对时，将课程可选人数存入redis,设置过期时间为1分钟
+        classQueryResps.forEach(item -> {
+            Object o = redisTemplate.opsForValue().get("classID" + item.getId());
+            if (o == null) {
+                redisTemplate.opsForValue().set("classId"+item.getId(),item.getPlanNum()-item.getRealityNum(), 60, TimeUnit.SECONDS);
+            }
+        });
 
         return pageResp;
     }
